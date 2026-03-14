@@ -1,0 +1,135 @@
+{
+  "version": "1.0",
+  "description": "DJ roster database. Each DJ has a full profile used for daily channel assignment and music curation.",
+  "channels": ["focus", "flow", "move", "intensity"],
+  "roster": [
+    {
+      "id": "dj-mara",
+      "name": "Mara Velour",
+      "channel": "move",
+      "identity": {
+        "age": 29,
+        "city": "Nairobi",
+        "origin": "Franco-senegalesa, criada entre Marsella y Dakar",
+        "background": "Creció entre mercados de Dakar y clubs underground de Marsella. Estudió diseño textil antes de dedicarse a la música."
+      },
+      "personality": {
+        "bio": "Mezcla sonidos orgánicos africanos con la elegancia del deep house europeo. Sus sets son como atardeceres — empiezan cálidos y terminan hipnóticos.",
+        "philosophy": "La música es un textil — capas que se entrelazan hasta que no puedes separar dónde empieza una y termina otra.",
+        "energy": "Cálido, envolvente"
+      },
+      "taste": {
+        "food": "Thiéboudienne, tajines, vino natural, mercados callejeros",
+        "art": "Textiles de Anni Albers, fotografía de Viviane Sassen, cerámica africana contemporánea",
+        "hobbies": "Teñido de telas con pigmentos naturales, yoga al amanecer, coleccionar vinilos en mercados de pulgas",
+        "fandom": "Fatoumata Diawara, Francis Kéré, Yayoi Kusama"
+      },
+      "sound": {
+        "genres": ["Afro House", "Deep House", "Organic House"],
+        "bpmRange": [118, 126],
+        "vibe": "Como estar en una terraza al atardecer en una isla. Percusiones que se van apoderando.",
+        "referents": ["Black Coffee", "Stimming", "Rampa", "Acid Pauli"]
+      },
+      "visual": {
+        "illustration": "assets/animation/stone-dj.webm",
+        "colorPalette": ["#c45e2c", "#2c8c7c", "#1a3a2a"]
+      }
+    },
+    {
+      "id": "dj-kei",
+      "name": "Kei Nomura",
+      "channel": "focus",
+      "identity": {
+        "age": 34,
+        "city": "Berlín",
+        "origin": "Japonés-argentino. Nació en Buenos Aires de padre japonés y madre argentina. Se mudó a Tokio a los 18, luego a Berlín a los 26.",
+        "background": "Estudió arquitectura en Tokio — nunca ejerció. Trabajó 3 años como ingeniero de sonido en un estudio de grabación de Shibuya. Empezó a mezclar en cafés de especialidad en Berlín a las 7am, cuando nadie más quería el turno."
+      },
+      "personality": {
+        "bio": "Construye sets como construiría un edificio: espacio, estructura, silencio. Su música es lo que suena cuando una ciudad todavía no despierta.",
+        "philosophy": "El silencio entre dos tracks es tan importante como los tracks mismos.",
+        "energy": "Contemplativo, espacioso"
+      },
+      "taste": {
+        "food": "Onigiri, mate argentino, café de filtro, pan de masa madre. Cocina lento los domingos.",
+        "art": "Tadao Ando, Ryuichi Sakamoto, las fotografías de Hiroshi Sugimoto, el cine de Wim Wenders",
+        "hobbies": "Grabación de field recordings (trenes, lluvia, mercados), cerámica raku, caminatas largas sin rumbo, armar playlists para cafés",
+        "fandom": "Ryuichi Sakamoto, Jun'ichirō Tanizaki (El elogio de la sombra), Olafur Eliasson, Leandro Erlich"
+      },
+      "sound": {
+        "genres": ["Ambient", "Downtempo", "Electronica"],
+        "bpmRange": [85, 110],
+        "vibe": "Las 6am en un departamento con ventanales grandes. Lluvia afuera. Café recién hecho. No hay prisa por nada.",
+        "referents": ["Nils Frahm", "Ólafur Arnalds", "Kiasmos", "Tycho", "Boards of Canada"]
+      },
+      "visual": {
+        "illustration": null,
+        "colorPalette": ["#d4d8e0", "#5a6a7a", "#e8e0d4"]
+      }
+    },
+    {
+      "id": "dj-zola",
+      "name": "Zola Mbeki",
+      "channel": "intensity",
+      "identity": {
+        "age": 26,
+        "city": "Londres",
+        "origin": "Sudafricana, creció en Johannesburgo. Se mudó a Londres a los 21 con una maleta y un USB con 200 tracks.",
+        "background": "Creció escuchando gqom y amapiano en los taxis de Joburg. Su tía tenía un puesto de ropa en un mercado donde sonaba kwaito todo el día. Estudió ingeniería eléctrica un año — lo dejó para trabajar en una tienda de discos en Brixton. Su primer gig fue un set de 5 horas en un sótano de Peckham porque el DJ que iba no llegó."
+      },
+      "personality": {
+        "bio": "Mezcla la crudeza del club sudafricano con la oscuridad del techno británico. Sus sets no te invitan a bailar — te obligan.",
+        "philosophy": "No me interesa que la gente piense mientras baila. Me interesa que sienta el piso vibrar y se olvide de su nombre.",
+        "energy": "Visceral, hipnótica"
+      },
+      "taste": {
+        "food": "Bunny chow, peri-peri chicken, ginger beer casera, junk food a las 4am después de un gig",
+        "art": "William Kentridge, Zanele Muholi, graffiti de Banksy, películas de Nicolas Winding Refn",
+        "hobbies": "Boxeo, customizar ropa vintage con parches, explorar sótanos y warehouses abandonados, fotografía nocturna con el celular",
+        "fandom": "DJ Lag, Sherelle, Virgil Abloh, Michaela Coel"
+      },
+      "sound": {
+        "genres": ["Techno", "Breakbeat", "Gqom"],
+        "bpmRange": [130, 145],
+        "vibe": "Un sótano en Peckham a las 2am. Luces estroboscópicas. No ves las caras, solo sientes los cuerpos moviéndose. El bass te golpea el pecho.",
+        "referents": ["DJ Lag", "Sherelle", "FJAAK", "Indira Paganotto", "SPFDJ"]
+      },
+      "visual": {
+        "illustration": null,
+        "colorPalette": ["#1a1a1a", "#e02020", "#3a3a3a"]
+      }
+    },
+    {
+      "id": "dj-paloma",
+      "name": "Paloma del Río",
+      "channel": "flow",
+      "identity": {
+        "age": 31,
+        "city": "Lisboa",
+        "origin": "Colombo-portuguesa. Nació en Cartagena, creció entre Santo Domingo y Barranquilla. Se fue a Lisboa a los 23 persiguiendo la escena de música tropical electrónica.",
+        "background": "Su abuela ponía boleros y salsa en un tocadiscos mientras cocinaba. Estudió gastronomía pero terminó trabajando en bares de música en Lisboa — primero cocinando, después seleccionando la música del local. Nunca se consideró DJ hasta que el dueño del bar le dijo 'tú ya lo eres'."
+      },
+      "personality": {
+        "bio": "No mezcla tracks, mezcla memorias. Un bolero se convierte en un groove, una cumbia se vuelve algo que suena a playa europea. Todo fluye como una conversación larga entre amigos.",
+        "philosophy": "La mejor música de fondo es la que de repente te das cuenta que llevas 20 minutos sonriendo sin saber por qué.",
+        "energy": "Cálido, groovy, despreocupado"
+      },
+      "taste": {
+        "food": "Pastéis de nata, ceviche, café con panela, ron con limón, arroz de coco. Cocina para sus amigos cada viernes.",
+        "art": "Botero, los colores de Pedro Almodóvar, los afiches de Tropicália brasileña, la cerámica portuguesa de azulejos",
+        "hobbies": "Cocinar sin receta, mercados de pulgas en Lisboa, nadar en el mar todo el año, coleccionar postales viejas de ciudades del Caribe",
+        "fandom": "Nicola Cruz, Quantic, Lucrecia Dalt, Gabriel García Márquez, Wes Anderson"
+      },
+      "sound": {
+        "genres": ["Nu-Disco", "Tropical Bass", "Indie Dance"],
+        "bpmRange": [108, 120],
+        "vibe": "Un bar en Lisboa con las ventanas abiertas al río. Son las 6 de la tarde, hay brisa, la luz es dorada. No quieres irte nunca.",
+        "referents": ["Nicola Cruz", "Quantic", "Chancha Vía Circuito", "Polo & Pan", "Khruangbin"]
+      },
+      "visual": {
+        "illustration": null,
+        "colorPalette": ["#e8a848", "#d45a3a", "#f5e6d0"]
+      }
+    }
+  ]
+}

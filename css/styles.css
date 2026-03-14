@@ -1,0 +1,958 @@
+/* ============================================
+   Nice Hub Live Set — Figma-exact layout
+   Canvas ref: 1440 × 820
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+/* Load Neue Haas Grotesk Display Pro 55 Roman from local system */
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: local('Neue Haas Grotesk Display Pro 55 Roman'),
+       local('Neue Haas Grotesk Display Pro'),
+       local('NeueHaasGroteskDispPro-55Roman'),
+       local('NeueHaasDisplay-Roman');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #e9e9e6;
+  --accent: #de4c13;
+  --black: #000000;
+  --white: #ffffff;
+  --font-hand: 'Reenie Beanie', cursive;
+  --font-body: 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--black);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =============================================
+   SPLASH SCREEN
+   ============================================= */
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  gap: 48px;
+}
+
+.splash__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash__nicehub {
+  width: 474px;
+  height: 74px;
+}
+
+.splash__liveset-wrap {
+  position: absolute;
+  left: 52%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 132px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash__oval {
+  width: 100%;
+  height: 100%;
+}
+
+/* Buttons removed — using shared .btn component */
+
+/* =============================================
+   MAIN — Absolute positioned canvas
+   ============================================= */
+.main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+}
+
+.main.visible {
+  display: block;
+}
+
+/* ---- SSM Logo — top left ---- */
+.ssm-link {
+  position: absolute;
+  left: 3.8%;
+  top: 64px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.ssm-link:hover {
+  transform: scale(1.08);
+}
+
+.ssm-link:active {
+  transform: scale(0.95);
+}
+
+.ssm-logo {
+  height: 50px;
+  width: auto;
+}
+
+/* ---- Nice Hub Logo — horizontally centered at top ---- */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+
+.logo__text {
+  width: 474px;
+  height: 74px;
+  display: block;
+}
+
+.logo__liveset-wrap {
+  position: absolute;
+  left: 52%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 132px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__liveset {
+  width: 100%;
+  height: 100%;
+}
+
+/* live.set bounce is driven by GSAP synced to BPM — no CSS keyframes needed */
+
+/* ---- Date ---- */
+.date {
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  top: 128px;
+  font-family: var(--font-hand);
+  font-size: 50px;
+  color: var(--black);
+  line-height: 1;
+}
+
+/* ---- DJ Zone — center-left ---- */
+.dj-zone {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 26.5%;
+  width: 720px;
+  height: 680px;
+  background: none;
+}
+
+.dj-zone__illustration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.dj-zone__illustration--ghost {
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ---- DJ Name — left of illustration ---- */
+.dj-name-area {
+  position: absolute;
+  left: 28%;
+  top: 42%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.dj-name-area__label,
+.dj-name-area__name {
+  font-family: var(--font-hand);
+  font-size: 80px;
+  color: var(--accent);
+  line-height: 0.85;
+  font-weight: bold;
+  -webkit-text-stroke: 1px var(--accent);
+}
+
+.dj-name-area__name {
+  max-width: 280px;
+  text-align: center;
+}
+
+/* ---- Genre Tags — scattered right side ---- */
+.genre-area {
+  position: absolute;
+  right: 20%;
+  top: 28%;
+  width: 220px;
+  height: 200px;
+}
+
+.genre-area__tag {
+  position: absolute;
+  font-family: var(--font-hand);
+  font-size: 50px;
+  color: var(--black);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.genre-area__tag:nth-child(1) {
+  top: 0;
+  left: 10px;
+  transform: rotate(-6deg);
+}
+
+.genre-area__tag:nth-child(2) {
+  top: 55px;
+  left: 80px;
+  transform: rotate(3deg);
+}
+
+.genre-area__tag:nth-child(3) {
+  top: 115px;
+  left: 20px;
+  transform: rotate(-2deg);
+}
+
+/* ---- Playlist Button (inside main) ---- */
+.main .btn--orange {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 71.5%;
+}
+
+.main .btn--orange:hover {
+  transform: translateX(-50%) scale(1.08);
+}
+
+.main .btn--orange:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+/* =============================================
+   ALBUM STACK — top right (queued albums)
+   ============================================= */
+.album-stack {
+  position: absolute;
+  right: -120px;
+  top: -160px;
+}
+
+.album-stack__card {
+  position: absolute;
+  width: 312px;
+  height: 312px;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.album-stack__card:hover {
+  transform: rotate(90deg) scale(1.04);
+}
+
+.album-stack__card--1 {
+  right: 15px;
+  top: -30px;
+  background: #7b8a6e;
+  transform: rotate(90deg);
+}
+
+.album-stack__card--2 {
+  right: -15px;
+  top: 0;
+  background: #3a5a8c;
+  transform: rotate(90deg);
+}
+
+/* Placeholder album art pattern */
+.album-stack__card,
+.playback-zone__behind,
+.playback-zone__cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Pattern overlay removed — using Unsplash cover images */
+
+/* =============================================
+   PLAYBACK ZONE — right side
+   ============================================= */
+.playback-zone {
+  position: absolute;
+  right: -20px;
+  bottom: 20px;
+  width: 380px;
+  height: 420px;
+}
+
+/* Album behind (rotated) */
+.playback-zone__behind {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 312px;
+  height: 312px;
+  border-radius: 4px;
+  transform: rotate(3.12deg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background: #c45e2c;
+}
+
+/* Current album cover */
+.playback-zone__cover {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  width: 312px;
+  height: 312px;
+  border-radius: 4px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  background: #2dbcc4;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Glass overlay on all covers */
+.playback-zone__cover::after,
+.playback-zone__behind::after,
+.album-stack__card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.30) 0%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.20) 100%
+  );
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
+  pointer-events: none;
+}
+
+.playback-zone__cover:hover {
+  transform: scale(1.03);
+}
+
+/* Behind album hover */
+.playback-zone__behind {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.playback-zone__behind:hover {
+  transform: rotate(3.12deg) scale(1.04);
+}
+
+/* LP Vinyl — centered on album cover */
+.playback-zone__vinyl {
+  position: absolute;
+  left: 26px;
+  top: 116px;
+  width: 260px;
+  height: 260px;
+  z-index: 18;
+  pointer-events: none;
+}
+
+.playback-zone__vinyl-img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.playback-zone__vinyl.spinning .playback-zone__vinyl-img {
+  animation: spin 2s linear infinite;
+}
+
+/* Effect knob — vinyl brake button */
+#effect {
+  transition: transform 0.3s ease;
+}
+
+#effect:hover {
+  transform: scale(1.05);
+}
+
+#effect:hover .st0 {
+  stroke: #DE4C13;
+  transition: stroke 0.3s ease;
+}
+
+#effect.effect--active {
+  transform: scale(0.96);
+}
+
+#effect.effect--active .st0 {
+  stroke: #DE4C13;
+  transition: stroke 0.3s ease;
+}
+
+/* Volume control — orange on hover */
+#control_volume:hover .st0 {
+  stroke: #DE4C13;
+  transition: stroke 0.3s ease;
+}
+
+/* Cables — orange on hover + when disconnected */
+.cable-hit:not(.disabled):hover + .cable {
+  stroke: #DE4C13 !important;
+  transition: stroke 0.3s ease;
+}
+
+.cable.disconnected {
+  stroke: #DE4C13 !important;
+}
+
+/* Illustration Set — turntable overlay, always on top of covers */
+.illustration-set {
+  position: absolute;
+  left: 8px;
+  top: 98px;
+  width: 296px;
+  height: 296px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+/* =============================================
+   DJ INFO — bottom left (stacked: arrow on top, text below)
+   ============================================= */
+.dj-info {
+  position: absolute;
+  left: 49px;
+  bottom: 18px;
+}
+
+.dj-info__arrow {
+  position: absolute;
+  width: 70px;
+  height: 15px;
+  top: -18px;
+  left: 115px;
+}
+
+.dj-info__text {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.dj-info__genre {
+  margin-left: 30px;
+}
+
+.dj-info__label {
+  font-family: var(--font-body);
+  font-size: 28px;
+  color: var(--accent);
+}
+
+.dj-info__name {
+  font-family: var(--font-body);
+  font-size: 28px;
+  color: var(--accent);
+}
+
+.dj-info__genre {
+  font-family: var(--font-body);
+  font-size: 28px;
+  color: var(--accent);
+}
+
+/* =============================================
+   FOOTER LINK — centered at bottom
+   ============================================= */
+.footer-link {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-body);
+  font-size: 28px;
+  color: var(--black);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+  transform: translateX(-50%) scale(1.05);
+}
+
+.footer-link:active {
+  color: #9b3006;
+  transform: translateX(-50%) scale(0.97);
+}
+
+/* =============================================
+   BUTTON COMPONENT (Figma SVG states)
+   ============================================= */
+.btn {
+  position: relative;
+  width: 144px;
+  height: 60px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.btn__bg--hover,
+.btn__bg--active {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.btn__bg--default {
+  opacity: 1;
+}
+
+.btn:hover .btn__bg--hover { opacity: 1; }
+
+.btn:active .btn__bg--hover { opacity: 0; }
+.btn:active .btn__bg--active { opacity: 1; }
+
+.btn__text {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-hand);
+  font-size: 50px;
+  color: var(--bg);
+  line-height: 1;
+  padding-bottom: 4px;
+}
+
+/* ---- All buttons — no default outline, allow overflow for focus bk ---- */
+.btn--black,
+.btn--mute,
+.btn--next,
+.btn--orange {
+  outline: none;
+  overflow: visible;
+}
+
+/* Focus outline (bk) — decorative border from Figma, hidden by default */
+.btn__bg--focus { opacity: 0; }
+.btn__strike--focus { opacity: 0; }
+.btn__focus-bk {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Mute & Next focus-bk: bk viewBox 86.8535x37.1842 vs button 82x34 */
+.btn--mute .btn__focus-bk,
+.btn--next .btn__focus-bk {
+  top: -4.68%;
+  left: -2.96%;
+  width: 105.92%;
+  height: 109.37%;
+}
+
+/* Black & Orange focus-bk: bk viewBox 154.999x65 vs button 144x60 */
+.btn--black .btn__focus-bk,
+.btn--orange .btn__focus-bk {
+  top: -4.17%;
+  left: -3.82%;
+  width: 107.64%;
+  height: 108.33%;
+}
+
+/* Show focus state on keyboard navigation (focus-visible) */
+.btn--black:focus-visible .btn__bg--focus,
+.btn--next:focus-visible .btn__bg--focus,
+.btn--orange:focus-visible .btn__bg--focus { opacity: 1; }
+
+.btn--black:focus-visible .btn__focus-bk,
+.btn--mute:focus-visible .btn__focus-bk,
+.btn--next:focus-visible .btn__focus-bk,
+.btn--orange:focus-visible .btn__focus-bk { opacity: 1; }
+
+/* Hide default bg when focused */
+.btn--black:focus-visible .btn__bg--default { opacity: 0; }
+.btn--next:focus-visible .btn__bg--next-default { opacity: 0; }
+.btn--orange:focus-visible .btn__bg--default { opacity: 0; }
+
+/* Mute focus: type=mute (not muted) — show black focus fill */
+.btn--mute:focus-visible .btn__bg--focus.btn__bg--mute-off { opacity: 1; }
+.btn--mute:focus-visible .btn__bg--mute-off.btn__bg--default { opacity: 0; }
+
+/* Mute focus: type=unmute (muted) — show orange focus fill + focus strike */
+.btn--mute.muted:focus-visible .btn__bg--focus.btn__bg--mute-off { opacity: 0; }
+.btn--mute.muted:focus-visible .btn__bg--focus.btn__bg--mute-on { opacity: 1; }
+.btn--mute.muted:focus-visible .btn__strike--focus { opacity: 1; }
+.btn--mute.muted:focus-visible .btn__bg--mute-on.btn__bg--default { opacity: 0; }
+.btn--mute.muted:focus-visible .btn__strike--default { opacity: 0; }
+
+/* ---- Mute button ---- */
+.btn--mute {
+  position: relative;
+  width: 82px;
+  height: 34px;
+}
+
+.btn--mute .btn__text--mute {
+  font-size: 34px;
+  padding-bottom: 2px;
+}
+
+/* Strikethrough line — positioned over the text */
+.btn__strike {
+  position: absolute;
+  z-index: 2;
+  top: 41%;
+  left: 13.4%;
+  width: 54%;
+  height: 33%;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Override generic btn hover/active rules — no transitions */
+.btn--mute .btn__bg,
+.btn--next .btn__bg { opacity: 0; transition: none; }
+.btn--mute .btn__strike { opacity: 0; }
+
+/* === Not muted: type=mute (black) === */
+.btn--mute .btn__bg--mute-off.btn__bg--default { opacity: 1; }
+.btn--mute:hover .btn__bg--mute-off.btn__bg--default { opacity: 0; }
+.btn--mute:hover .btn__bg--mute-off.btn__bg--hover { opacity: 1; }
+.btn--mute:active .btn__bg--mute-off.btn__bg--hover { opacity: 0; }
+.btn--mute:active .btn__bg--mute-off.btn__bg--active { opacity: 1; }
+
+/* === Muted: type=unmute (orange + strikethrough) === */
+.btn--mute.muted .btn__bg--mute-off { opacity: 0 !important; }
+
+.btn--mute.muted .btn__bg--mute-on.btn__bg--default { opacity: 1; }
+.btn--mute.muted .btn__strike--default { opacity: 1; }
+
+.btn--mute.muted:hover .btn__bg--mute-on.btn__bg--default { opacity: 0; }
+.btn--mute.muted:hover .btn__bg--mute-on.btn__bg--hover { opacity: 1; }
+.btn--mute.muted:hover .btn__strike--default { opacity: 0; }
+.btn--mute.muted:hover .btn__strike--hover { opacity: 1; }
+
+/* Muted active → show mute hover (mouse is still over the button) */
+.btn--mute.muted:active .btn__bg--mute-on { opacity: 0 !important; }
+.btn--mute.muted:active .btn__strike { opacity: 0 !important; }
+.btn--mute.muted:active .btn__bg--mute-off.btn__bg--hover { opacity: 1 !important; }
+
+/* ---- Next button ---- */
+.btn--next {
+  position: relative;
+  width: 82px;
+  height: 34px;
+}
+
+.btn--next .btn__text--next {
+  font-size: 34px;
+  padding-bottom: 2px;
+}
+
+/* Hide all, show only default — no transitions */
+.btn--next .btn__bg { opacity: 0; }
+.btn--next .btn__bg--next-default { opacity: 1; }
+
+.btn--next:hover .btn__bg--next-default { opacity: 0; }
+.btn--next:hover .btn__bg--next-hover { opacity: 1; }
+
+.btn--next:active .btn__bg--next-default { opacity: 0; }
+.btn--next:active .btn__bg--next-hover { opacity: 0; }
+.btn--next:active .btn__bg--next-active { opacity: 1; }
+
+/* =============================================
+   CABLES — animated SVG connection lines
+   ============================================= */
+.cables {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.cable-hit {
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.cable-hit.disabled {
+  cursor: default;
+}
+
+.cables--back {
+  z-index: 0;
+}
+
+.cables--front {
+  z-index: 25;
+}
+
+/* =============================================
+   UTILITIES
+   ============================================= */
+.hidden {
+  display: none !important;
+}
+
+/* =============================================
+   Controls — bottom right (mute + next)
+   ============================================= */
+.debug-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 204px;
+  transform: translateX(50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 9999;
+  overflow: visible;
+}
+
+/* =============================================
+   RESPONSIVE — 2560×1440 (QHD / 2K)
+   ============================================= */
+@media (min-width: 2560px) {
+  .date {
+    left: 40%;
+  }
+  .dj-name-area {
+    top: 38%;
+  }
+  .genre-area {
+    right: 33%;
+  }
+  .main .btn--orange {
+    top: 63%;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — 1280×800 (HD laptops)
+   ============================================= */
+@media (max-width: 1280px) {
+  .ssm-logo {
+    height: 35px;
+  }
+  .logo__text {
+    width: 332px;
+    height: 52px;
+  }
+  .logo__liveset-wrap {
+    width: 92px;
+    height: 62px;
+  }
+  .splash__nicehub {
+    width: 332px;
+    height: 52px;
+  }
+  .splash__liveset-wrap {
+    width: 92px;
+    height: 62px;
+  }
+  .btn--black,
+  .btn--orange {
+    width: 115px;
+    height: 48px;
+  }
+  .btn--black .btn__text,
+  .btn--orange .btn__text {
+    font-size: 40px;
+  }
+  .splash {
+    gap: 30px;
+  }
+  .album-stack {
+    top: -200px;
+    right: -200px;
+  }
+  .footer-link {
+    font-size: 22px;
+  }
+  .dj-info__label,
+  .dj-info__name,
+  .dj-info__genre {
+    font-size: 22px;
+  }
+  .genre-area__tag {
+    font-size: 36px;
+  }
+  .dj-name-area__label,
+  .dj-name-area__name {
+    font-size: 60px;
+  }
+  .dj-name-area__name {
+    max-width: 220px;
+  }
+  .dj-zone {
+    width: 480px;
+    height: 453px;
+  }
+  .date {
+    font-size: 36px;
+    top: 100px;
+  }
+  .genre-area__tag:nth-child(2) {
+    top: 40px;
+  }
+  .genre-area__tag:nth-child(3) {
+    top: 80px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — 1024×768 (Tablet landscape)
+   ============================================= */
+@media (max-width: 1024px) {
+  .album-stack__card {
+    width: 250px;
+    height: 250px;
+  }
+  .playback-zone {
+    width: 304px;
+    height: 336px;
+  }
+  .playback-zone__cover,
+  .playback-zone__behind {
+    width: 250px;
+    height: 250px;
+  }
+  .playback-zone__cover {
+    top: 72px;
+  }
+  .playback-zone__vinyl {
+    width: 208px;
+    height: 208px;
+    left: 21px;
+    top: 93px;
+  }
+  .illustration-set {
+    width: 237px;
+    height: 237px;
+    left: 6px;
+    top: 78px;
+  }
+  .dj-zone {
+    width: 432px;
+    height: 408px;
+  }
+  .album-stack {
+    top: -180px;
+    right: -180px;
+  }
+  .genre-area {
+    right: 14%;
+  }
+  .main .btn--orange {
+    top: 65%;
+  }
+  .debug-controls {
+    right: 159px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — 768×1024 (Tablet portrait)
+   ============================================= */
+@media (max-width: 768px) {
+  .ssm-link {
+    top: 54px;
+  }
+  .genre-area {
+    right: 6%;
+  }
+  .dj-name-area {
+    left: 16%;
+    top: 74%;
+  }
+  .main .btn--orange {
+    top: 57%;
+  }
+  .footer-link {
+    display: none;
+  }
+}

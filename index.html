@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nice (live.set) hub — Slipstream Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Splash -->
+  <div class="splash" id="splash">
+    <div class="splash__logo">
+      <img src="assets/images/nice_hub.svg" alt="nice hub" class="splash__nicehub">
+      <div class="splash__liveset-wrap">
+        <img src="assets/images/live_set.svg" alt="live.set" class="splash__oval">
+      </div>
+    </div>
+    <button class="btn btn--black" id="enter-btn">
+      <img src="assets/images/btn_black_default.svg" alt="" class="btn__bg btn__bg--default">
+      <img src="assets/images/btn_black_hover.svg" alt="" class="btn__bg btn__bg--hover">
+      <img src="assets/images/btn_black_active.svg" alt="" class="btn__bg btn__bg--active">
+      <!-- Focus state -->
+      <img src="assets/images/btn_black_focus.svg" alt="" class="btn__bg btn__bg--focus">
+      <img src="assets/images/btn_black_focus_bk.svg" alt="" class="btn__focus-bk">
+      <span class="btn__text">enter</span>
+    </button>
+  </div>
+
+  <!-- Main App -->
+  <div class="main" id="main">
+
+    <!-- SSM Logo — top left -->
+    <a href="https://soundcloud.com" target="_blank" rel="noopener" class="ssm-link">
+      <img src="assets/images/soundcloud.svg" alt="SoundCloud" class="ssm-logo">
+    </a>
+
+    <!-- Nice Hub Logo — top center -->
+    <div class="logo">
+      <img src="assets/images/nice_hub.svg" alt="nice hub" class="logo__text">
+      <div class="logo__liveset-wrap" id="liveset-wrap">
+        <img src="assets/images/live_set.svg" alt="live.set" class="logo__liveset">
+      </div>
+    </div>
+
+    <!-- Date -->
+    <p class="date" id="current-date"></p>
+
+    <!-- DJ Illustration — center -->
+    <div class="dj-zone" id="dj-zone">
+      <img
+        class="dj-zone__illustration dj-zone__illustration--ghost"
+        src="assets/images/ilustration_dj.png"
+        alt=""
+      >
+      <video
+        class="dj-zone__illustration dj-zone__illustration--ghost"
+        id="dj-illustration-ghost"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+      <video
+        class="dj-zone__illustration"
+        id="dj-illustration"
+        src="assets/animation/stone-dj.webm"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+    </div>
+
+    <!-- DJ Name — left of illustration -->
+    <div class="dj-name-area" id="dj-name-area">
+      <p class="dj-name-area__label">Dj</p>
+      <p class="dj-name-area__name" id="dj-name">cooler</p>
+    </div>
+
+    <!-- Genre Tags — right of illustration -->
+    <div class="genre-area" id="dj-genres">
+      <span class="genre-area__tag">indie</span>
+      <span class="genre-area__tag">rock</span>
+      <span class="genre-area__tag">hip hop</span>
+    </div>
+
+    <!-- Playlist Button -->
+    <button class="btn btn--orange" id="listen-btn">
+      <img src="assets/images/btn_orange_default.svg" alt="" class="btn__bg btn__bg--default">
+      <img src="assets/images/btn_orange_hover.svg" alt="" class="btn__bg btn__bg--hover">
+      <img src="assets/images/btn_orange_active.svg" alt="" class="btn__bg btn__bg--active">
+      <!-- Focus state -->
+      <img src="assets/images/btn_orange_focus.svg" alt="" class="btn__bg btn__bg--focus">
+      <img src="assets/images/btn_orange_focus_bk.svg" alt="" class="btn__focus-bk">
+      <span class="btn__text">change</span>
+    </button>
+
+    <!-- Album Stack — top right (queued albums) -->
+    <div class="album-stack" id="album-stack">
+      <a class="album-stack__card album-stack__card--1" id="stack-card-1" href="#" target="_blank" rel="noopener"></a>
+      <a class="album-stack__card album-stack__card--2" id="stack-card-2" href="#" target="_blank" rel="noopener"></a>
+    </div>
+
+    <!-- Playback Zone — right side -->
+    <div class="playback-zone" id="playback-zone">
+      <!-- Stacked album behind (rotated) -->
+      <a class="playback-zone__behind" id="album-behind" href="#" target="_blank" rel="noopener"></a>
+
+      <!-- Current album cover -->
+      <a class="playback-zone__cover" id="album-cover" href="#" target="_blank" rel="noopener"></a>
+
+      <!-- LP Vinyl -->
+      <div class="playback-zone__vinyl" id="vinyl">
+        <img src="assets/images/lp.png" alt="LP" class="playback-zone__vinyl-img">
+      </div>
+
+      <!-- Illustration Set (turntable overlay — stays fixed, inline for volume fader) -->
+      <svg class="illustration-set" id="illustration-set" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296 296">
+        <defs>
+          <style>
+            .st0 { fill: none; stroke: #000; stroke-linecap: round; stroke-width: 2px; }
+          </style>
+        </defs>
+        <g id="perilla">
+          <path class="st0" d="M276.8,20.5c0,0,0-.2-2,3.1-2,3.2-6,9.8-9,15.2-3,5.4-4.9,9.5-6,11.7-1.1,2.3-1.3,2.6-3.7,8.9-2.4,6.3-7,18.5-10.4,28.9-3.4,10.4-5.5,18.7-6.6,23.2-1.2,4.5-1.3,5-2.6,8.8-1.3,3.8-3.6,11-5,15-2.3,6.5-4.4,8.7-9,12.3-4.6,3.6-6.5,3.8-8,5-1.6,1.2-3.7,2.8-5.5,3.8-.3.2-.6.4-1.2.7"/>
+          <path class="st0" d="M207.8,154.8c-.5,0-5.7,2.3-8.4,4.4-.9.7,0,2.2.5,2.8.2.3.5.5.9.6,2.5.5,5.7-2.2,6.9-3.2.3-.2.5-.5.6-.8,0-.3,0-.7,0-1-.1-.3-.3-.6-.5-.7-.6-.3-2.5,1-4.6,2.4-.6.4-.2.5.1.4.7-.2,1.3-.7,1.7-.9.2-.2-2,.9-3.9,2.1-.6.4-.1.4.3.4.4,0,.8-.1,1.2-.2.4,0,.7-.1,1-.2"/>
+          <path class="st0" d="M196.8,160.8c-.3,0-2,.6-10.6,5.5-6.2,3.5-7.9,4.4-8.7,5.1-.7.5-.4,1.6-.2,2.4.4,1.5,2.8,2.2,6.3,3.1,1.8.4,4-.7,6.2-2,4.7-2.8,10-8.7,10.7-10.1.1-.2-.5-.3-1-.4-1,0-4.6,1.5-9.1,3.6-1.3.6-1,0-.3-.8,1.5-1.6,2.8-2.6,3-2.8.3-.2-4.5,2.9-10.2,6.7-1.8,1.2-1.2,1.1.4.4,1.6-.7,4.2-1.9,5.4-2.3s1-.2,0,.6c-1,.9-2.7,2.3-3.4,3-2.6,2.7,10.7-6.3,11.7-6.8,3.5-1.7-6.5,6.4-8.3,7.7-1.5,1.1-3.3,1.4-6.1,1.5-.6,0-1-.2-1.3-.3-.3-.2-.6-.4-.9-.8"/>
+          <path class="st0" d="M278.8,13.4c-.2.2-1.7,1.9-2.5,3.5-.9,1.8,2.9,3.1,4.3,3.4.9.2,1.7-.2,2.3-.6.6-.4,1.1-1,1.2-1.6.4-1.6-2.1-3.2-3.2-4.1-1.5-1.2-2.8,2.9-2.8,3.5-.1,1.4,2.4,1,3,1,.2-.1.3-.5.3-.8,0-.3-.1-.6-.3-1.2"/>
+          <path class="st0" d="M278.5,13.8c0-.5-.7-2.4-1.7-3.9-.2-.3-.3-.6-.2-1,.8-2.2,3.2-3.9,5.3-6,.7-.7,2.2-1,4.2-1,1.9,0,3.2,1.5,5.7,3.5.6.5,1.1,1,1.4,1.5,1.1,1.9-1.9,4.9-2.9,6.2-1.4,1.9-2.7,3.1-4.5,3.5-1.7.4-3.1,0-3.7-.4-1.7-1.1-1.8-3.8-2.1-5.5,0-.5,1.6,1.9,3,3.4.5.6.8.8,1,.1,1-4.6-.7-6.9-.5-7.1,1.8-2.2,3.2,3.2,4.1,3.9.4.3-.6-2.6-1.6-5.2-.4-.9.2-1,.7-.9,1.2.3,2.2,1.4,3.1,2.2.6.6.7,1.6.6,2.6-.2,2.3-2.8,3.6-4.3,4.5-.9.5-1.9.4-2.8.3-1.9-.2-2.9-2.3-3.7-3.9-.2-.4-.2-1-.2-1.4,0-.4.2-.7.5-1,1.9-2.2,6.6-3.7,8.4-4.3.7.2,1.8,1.4,2.9,3,.5.7.6,1,.7,1.7"/>
+          <path class="st0" d="M272,18.6c-3.1,0-9.8.4-12.2,1.4-2,.8-3.7,2.5-5.2,4-1.9,1.9-2.2,6.4-2.6,14.2-.2,3.6,1.6,5.8,2.9,7.6,1.5,2,5,3.6,8.4,4.7,3.8,1.3,10.8-.5,14.6-1.9,2.1-.8,4.1-4,5.3-5.9,1.4-2.4,1.6-8.9,1.3-11.6-.2-2.5-2-5.5-3.5-7.3-1.4-1.6-2.8-2.3-4.1-3.2-1.2-.7-2.7-1.3-4.3-1.7-.5,0-1.2,0-1.9,0"/>
+          <path class="st0" d="M252.6,25.3c-.7-.4-2.3-1.2-3.1-1.5-.4-.1-.7,0-1,.2-.2.2-.4.5-.4.4,0-.5.8-1.6,1.4-2.6.5-.9-1.9,1.3-2.4,1.6-.3.2-.6.2-1,0-.9-.6-1.4-1.8-1.8-2.5-.2-.3,0-.6.3-.9s.5-.4.9-.4.7.3,1.7,1"/>
+        </g>
+        <g id="box">
+          <path class="st0" d="M286.1,208.1v81.5"/>
+          <path class="st0" d="M289.2,205c-2,0-8.5.6-11.2,1.4-1.5.5-2.5,2.6-3.5,5.7-.4,1-.4,2.5-.4,14.9,0,12.4,0,35.8,0,48.5,0,12.7.1,14.2.2,15.1.1,1.3.5,1.9,1,2.5,1.2,1.4,6.9,1,10.3.8,2.5-.2,5-.9,6.4-1.8,1.5-.9,1.2-4,1.1-10.5,0-5.2-.3-14.4-.3-21.4,0-7,0-11.6.4-18.5.3-7,.9-16.3,1.2-22.5.5-9.1.3-12.3-.3-12.7-.7-.3-1.5-.5-2.2-.6-.4,0-.8,0-1.1,0"/>
+        </g>
+        <!-- Box hit area — click anywhere on the track to set volume -->
+        <rect id="box_hit" x="265" y="205" width="35" height="90" fill="transparent" style="pointer-events: all; cursor: pointer;"/>
+        <g id="control_volume" style="cursor: grab; pointer-events: all;">
+          <!-- Invisible hit area — larger safe zone for dragging -->
+          <rect x="262" y="210" width="40" height="30" fill="transparent"/>
+          <path class="st0" d="M276.2,217.1s0,2.2,1.4,5.5c1.5,3.8,9,1.4,12.8,1.4,1.3,0,1.3-.5,1.4-1,.6-2.7,1-5,.9-6.3-.1-1.4-8.6,1.1-13.6,1.6-.6,0-1.3,0-1.5.9-.3.8-.1,2.4.1,3.2.3.8.7.7,1.1.5.9-.4,2.2-1.4,3.4-2,1-.5-.7,2-.6,2.3.5,1.9,2.9-2.9,3.8-3.2,1.4-.5-1.3,3-1.4,3.8-.4,2.4,5.1-3.3,5.5-3.5,0,.1,0,.7-.2,1.2-.1.5-.3,1-.4,1.7"/>
+          <path class="st0" d="M282.3,226.5c0,0-.8-.1-2.3.2-1.2.3-1,2.6-.9,4.1.3,3.6,10.4.5,11.9-.2.9-.5.2-2.6-.4-3.9-.6-1.4-4.6.4-7.7.8-.9.1-.6.3.4.5,1,.2,2.7.5,2.5.8-.2.3-2.2.7-3,1-.4.3,3.2.3,6.5.3,0,0-3,0-6.2,0"/>
+        </g>
+        <g id="effect" style="pointer-events: all; cursor: pointer;">
+          <!-- Invisible hit area for easier clicking -->
+          <circle cx="16" cy="14" r="18" fill="transparent"/>
+          <path class="st0" d="M16.5,1c-1.9,0-6.3.1-8.8,1-2.3.8-4,3.2-5.4,5.1-.4.5-.7,1.8-1,4.2-.8,5.4.5,7.6,1.7,9.8.7,1.3,1.9,2.1,3.5,3.1,1.9,1.2,3.6,1.3,5.1,1.5,3.8.5,6.7-1,9.5-2.5,2.7-1.5,3.9-3.7,4.7-5.3,1.1-2.2.8-5.4.1-7.9-.9-3.3-3-4.5-3.8-5.3-.8-.8-2.1-1.7-3.8-2.7-.6-.3-1.2-.4-1.7-.5-.3,0-.7,0-1.7-.1"/>
+          <path class="st0" d="M2.4,10.8c0,0,0-.2,0-.6.3-2,4.4-4.2,6.7-5.4.3-.1-1.6,3.5-4.4,8.3-1.1,1.9-1.2,2.3-1.2,2.7,0,.1.3.1,2.1-1.3,5.1-4.2,8.1-7,7.5-6.4-.6.6-2.2,2.1-4.7,4.9-2.5,2.8-3.5,4.7-3.5,4.9,0,0,.3,0,2.2-2.1,1.9-2,5.3-5.8,7-7.6,1.7-1.8,1.4-1.4.1.3-1.3,1.7-3.6,4.7-4.9,6.5-1.7,2.3-2.2,3.5-2.5,4.6,0,.4.2.4.4.4.2,0,.5-.2,2.2-1.7,1.7-1.5,4.7-4.4,6.1-5.7,1.4-1.3,1.1-.8.3.7-2,3.8-3.5,7.2-3.8,8.5-.1.4.2.5,1.9-1.5,1.7-2,4.8-6,6.4-7.9,1.6-1.9,1.5-1.6,1.2-1-2,4.5-3.2,9.4-3,9.9,0,.2.5.2.8.1,1.7-.3,3.8-4.1,5-6.9.2-.5.4-1.1.5-1.2,1.5-1.3,0,5.4-1.1,7.2-1.3,2-3,2.4-4.6,2.8-3.5.9-5.8,0-9.5-1.1-4.1-1.4-5.1-3.1-5.7-3.9-.6-.8-.6-1.9-.6-2.4,0-1.1.6,3.4,2.1,6.2.8,1.5,2.1,2.2,3.1,2.7,1.5.7,4.2.2,7.3-.8,3.3-1.8,4.6-3.2,5.5-4.5.2-.3.2-.7.3-1.2"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Left cable: SSM → DJ (behind covers) -->
+    <svg class="cables cables--back" id="cables-back" xmlns="http://www.w3.org/2000/svg">
+      <path id="cable-left-hit" class="cable-hit"
+        fill="none" stroke="transparent" stroke-width="16" stroke-linecap="round" />
+      <path id="cable-left" class="cable"
+        fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" />
+      <circle class="cable-plug" id="plug-ssm" r="3" fill="none" stroke="#000" stroke-width="2" />
+      <circle class="cable-plug" id="plug-dj-left" r="3" fill="none" stroke="#000" stroke-width="2" />
+      <circle class="cable-plug" id="plug-dj-right" r="3" fill="none" stroke="#000" stroke-width="2" />
+    </svg>
+
+    <!-- Right cable: DJ → album (on top of covers/LP/illustration) -->
+    <svg class="cables cables--front" id="cables-front" xmlns="http://www.w3.org/2000/svg">
+      <path id="cable-right-hit" class="cable-hit"
+        fill="none" stroke="transparent" stroke-width="16" stroke-linecap="round" />
+      <path id="cable-right" class="cable"
+        fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" />
+      <circle class="cable-plug" id="plug-album" r="3" fill="none" stroke="#000" stroke-width="2" />
+    </svg>
+
+    <!-- DJ Info — bottom left -->
+    <div class="dj-info">
+      <img src="assets/images/arrow.svg" alt="" class="dj-info__arrow">
+      <div class="dj-info__text">
+        <span class="dj-info__label">dj</span>
+        <span class="dj-info__name" id="footer-dj-name">cooler</span>
+        <span class="dj-info__genre" id="footer-dj-genre">alternative</span>
+      </div>
+    </div>
+
+    <!-- Footer — centered link -->
+    <a class="footer-link" href="https://soundcloud.com" target="_blank" rel="noopener">
+      soundcloud.com
+    </a>
+
+    <!-- DEBUG: Temporary controls -->
+    <div class="debug-controls" id="debug-controls">
+      <button class="btn btn--mute" id="debug-mute">
+        <!-- type=mute (not muted, audio playing) -->
+        <img src="assets/images/btn_mute_default.svg" alt="" class="btn__bg btn__bg--default btn__bg--mute-off">
+        <img src="assets/images/btn_mute_hover.svg" alt="" class="btn__bg btn__bg--hover btn__bg--mute-off">
+        <img src="assets/images/btn_mute_active.svg" alt="" class="btn__bg btn__bg--active btn__bg--mute-off">
+        <!-- type=unmute (muted, audio silenced) -->
+        <img src="assets/images/btn_unmute_default.svg" alt="" class="btn__bg btn__bg--default btn__bg--mute-on">
+        <img src="assets/images/btn_unmute_hover.svg" alt="" class="btn__bg btn__bg--hover btn__bg--mute-on">
+        <img src="assets/images/btn_unmute_active.svg" alt="" class="btn__bg btn__bg--active btn__bg--mute-on">
+        <!-- Strikethrough line (only visible when muted) -->
+        <img src="assets/images/btn_unmute_strike_default.svg" alt="" class="btn__strike btn__strike--default">
+        <img src="assets/images/btn_unmute_strike_hover.svg" alt="" class="btn__strike btn__strike--hover">
+        <!-- Focus state: type=mute (not muted) -->
+        <img src="assets/images/btn_mute_focus.svg" alt="" class="btn__bg btn__bg--focus btn__bg--mute-off">
+        <!-- Focus state: type=unmute (muted) -->
+        <img src="assets/images/btn_unmute_focus.svg" alt="" class="btn__bg btn__bg--focus btn__bg--mute-on">
+        <img src="assets/images/btn_unmute_strike_focus.svg" alt="" class="btn__strike btn__strike--focus">
+        <!-- Focus bk (shared) -->
+        <img src="assets/images/btn_mute_focus_bk.svg" alt="" class="btn__focus-bk">
+        <span class="btn__text btn__text--mute">mute</span>
+      </button>
+      <button class="btn btn--next" id="debug-next" style="display:none">
+        <img src="assets/images/btn_next_default.svg" alt="" class="btn__bg btn__bg--next-default">
+        <img src="assets/images/btn_next_hover.svg" alt="" class="btn__bg btn__bg--next-hover">
+        <img src="assets/images/btn_next_active.svg" alt="" class="btn__bg btn__bg--next-active">
+        <!-- Focus state -->
+        <img src="assets/images/btn_next_focus.svg" alt="" class="btn__bg btn__bg--focus">
+        <img src="assets/images/btn_next_focus_bk.svg" alt="" class="btn__focus-bk">
+        <span class="btn__text btn__text--next">next</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- SoundCloud Widgets (hidden) — two iframes for gapless background playback -->
+  <iframe
+    id="sc-widget-a"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com&auto_play=false"
+    style="position:absolute;width:0;height:0;border:0;overflow:hidden;"
+  ></iframe>
+  <iframe
+    id="sc-widget-b"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com&auto_play=false"
+    style="position:absolute;width:0;height:0;border:0;overflow:hidden;"
+  ></iframe>
+
+  <!-- GSAP + SoundCloud Widget API -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+
+  <!-- App scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/vinyl.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

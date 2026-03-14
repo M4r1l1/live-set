@@ -1,0 +1,478 @@
+{
+  "version": "1.0",
+  "description": "Curated music pools per DJ. Each mix was evaluated by the DJ's personality profile. Artwork from SoundCloud oEmbed.",
+  "playlists": {
+    "dj-mara": {
+      "djName": "Mara Velour",
+      "channel": "move",
+      "pool": [
+        {
+          "id": "mara-01",
+          "title": "Keinemusik Black Coffee Afro House Mix 2025 - 1 Hour Live Set",
+          "artist": "Meddi",
+          "soundcloudUrl": "https://soundcloud.com/meddi404/ultimate-afro-house-mix-2024-1-hour-live-set",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-7cjYcB016PrrPwhu-9yzgWQ-t500x500.jpg",
+          "djVerdict": "Keinemusik + Black Coffee es mi territorio exacto. Transiciones suaves, percusión africana bien tratada."
+        },
+        {
+          "id": "mara-02",
+          "title": "Essential Afro House 2024 | Black Coffee - Keinemusik - Moojo - Shimza - BLONDISH",
+          "artist": "Dave Bin",
+          "soundcloudUrl": "https://soundcloud.com/dave-bin/essential-afro-house-2024-black-coffee-keinemusik-moojo-mont-rouge-manoo-blondish-enoo-napa-shimza",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-SIKO8mnsfLg2kEQK-L9pjyQ-t500x500.jpg",
+          "djVerdict": "Moojo, Blondish, Shimza, Mont Rouge... todos artistas que pondría en mi set. Buen rango."
+        },
+        {
+          "id": "mara-03",
+          "title": "Keinemusik &ME, Rampa, Adam Port at Afro House Sunset (FULL SET)",
+          "artist": "Maxxteen",
+          "soundcloudUrl": "https://soundcloud.com/afrohouseofc/keinemusik-me-rampa-adam-port",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-n2GpxZzMNyPmdCb8-83yCcQ-t500x500.jpg",
+          "djVerdict": "Un full set de Keinemusik al atardecer — esto es exactamente mi energía."
+        },
+        {
+          "id": "mara-04",
+          "title": "Stimming Live at Palapa Fusion 23",
+          "artist": "Stimming",
+          "soundcloudUrl": "https://soundcloud.com/stimming/stimming-live-palapa-fusion-23",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-isLy9nyfzuCQy4mR-HsSaEg-t500x500.jpg",
+          "djVerdict": "Stimming en Fusion al amanecer. Más experimental de lo que suelo poner, pero me gusta esa libertad."
+        },
+        {
+          "id": "mara-05",
+          "title": "Stimming - Deep House Amsterdam Mixtape #140",
+          "artist": "DHA FM (Deep House Amsterdam)",
+          "soundcloudUrl": "https://soundcloud.com/deep-house-amsterdam/stimming-deep-house-amsterdam-mixtape-140",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000107776902-1im2qr-t500x500.jpg",
+          "djVerdict": "Stimming en modo deep. Perfecto para los momentos más introspectivos de mi set."
+        },
+        {
+          "id": "mara-06",
+          "title": "Acid Pauli Boiler Room Tulum DJ Set",
+          "artist": "Boiler Room",
+          "soundcloudUrl": "https://soundcloud.com/platform/acid-puli",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000108866359-rtn68o-t500x500.jpg",
+          "djVerdict": "Acid Pauli en Tulum. Orgánico, psicodélico, con tierra. Me encanta."
+        },
+        {
+          "id": "mara-07",
+          "title": "Acid Pauli - Full DJ set from Polygon Live @ Wonderfruit 2023",
+          "artist": "Polygon Live",
+          "soundcloudUrl": "https://soundcloud.com/polygon_live/acid-pauli-wonderfruit2023",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-Rw40B2oNjAEkHC7Y-J8VbDw-t500x500.jpg",
+          "djVerdict": "Wonderfruit es mi tipo de festival. Naturaleza + música. El set tiene esa energía."
+        },
+        {
+          "id": "mara-08",
+          "title": "Melodic Afro House Summer 2024 - Ibiza Sunset | Keinemusik Black Coffee Arodes Moojo",
+          "artist": "Dave Bin",
+          "soundcloudUrl": "https://soundcloud.com/dave-bin/melodic-organic-afro-house-summer-2024-ibiza-sunset-keinemusik-blackcoffee-arodes-camelphat-fahlberg-moojo-carlita",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-JchqxMXDACX3v8Su-FtOIpw-t500x500.jpg",
+          "djVerdict": "Arodes, Carlita, Fahlberg... todo el espectro melódico afro. Esto suena a terraza."
+        },
+        {
+          "id": "mara-09",
+          "title": "Afro House Mix 2024 (Alex Wann, KeineMusik, &Me, Rampa, Adam Port, Rivo, Disclosure)",
+          "artist": "Jake Dile",
+          "soundcloudUrl": "https://soundcloud.com/djjakedile/afro-house-mix-2024-alex-wann-keinemusik-me-rampa-adam-port-rivo-disclosure",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-wbu9plktKFbo0Ixm-yixZug-t500x500.jpg",
+          "djVerdict": "Disclosure le agrega un toque pop que no es muy yo, pero la base Keinemusik lo sostiene."
+        },
+        {
+          "id": "mara-10",
+          "title": "DEEPRO - AFRO DEEP & MELODIC HOUSE MIX (2025) SUNSET SERIES 6",
+          "artist": "DJDeepro",
+          "soundcloudUrl": "https://soundcloud.com/djdeepro/deepro-afro-deep-melodic-house-mix-2025-sunset-series-6",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-qS69N4q0ppztSdUE-aVxnvQ-t500x500.jpg",
+          "djVerdict": "Afro deep + melódico. Buen acompañamiento, no protagoniza. Funciona."
+        },
+        {
+          "id": "mara-11",
+          "title": "AFRO HOUSE MIX 2025 / HUGEL, Adam Port, Moojo, Aaron Sevilla / LIVE DJ SET",
+          "artist": "Dennis Gold",
+          "soundcloudUrl": "https://soundcloud.com/dennisgoldmusic/afro-house-mix-2025-hugel-adam-port-moojo-aaron-sevilla-live-dj-set",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-o21VOOxYMNy0RirO-58mkIA-t500x500.jpg",
+          "djVerdict": "HUGEL a veces es demasiado comercial para mí, pero Adam Port y Moojo lo equilibran."
+        },
+        {
+          "id": "mara-12",
+          "title": "AFRO HOUSE Sunset Mix 2025 | DJ Set in the French Alps (Adam Port, MoBlack, Hugel)",
+          "artist": "granat",
+          "soundcloudUrl": "https://soundcloud.com/granat-vibes/afro-house-sunset-mix-2025-dj",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-FBXSI4Xm0YtV1iTA-JKuqfQ-t500x500.jpg",
+          "djVerdict": "Adam Port + MoBlack en los Alpes. Ritmo africano en paisaje europeo — eso soy yo."
+        },
+        {
+          "id": "mara-13",
+          "title": "The Orient Collective - Deep Organic & Afro House Journey | Tibetania MIX [2025]",
+          "artist": "Tibetania Records",
+          "soundcloudUrl": "https://soundcloud.com/tibetaniarecords/the-orient-collective-deep-organic-afro-house-journey-tibetania-mix-2025",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-xCF5QOitu7l7p1jz-ghrVMQ-t500x500.jpg",
+          "djVerdict": "Oriental twist + organic house. Es explorar algo distinto pero dentro de mi vocabulario."
+        },
+        {
+          "id": "mara-14",
+          "title": "Caiiro X Da Capo X Enoo Napa (B3B) Live @ ZAZU 19 APR 2025",
+          "artist": "ZAZU",
+          "soundcloudUrl": "https://soundcloud.com/zazutribe/caiiro-x-da-capo-x-enoo-napa-b3b-live-at-zazu-19-apr-2025",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-XONcoOdSriySN2f3-s3nzNg-t500x500.jpg",
+          "djVerdict": "Caiiro, Da Capo y Enoo Napa juntos — tres maestros del afro house sudafricano. Esto es raíz pura."
+        },
+        {
+          "id": "mara-15",
+          "title": "Afro House Live Mix @OMR 2025 Hamburg (Black Coffee, Shimza, Enoo Napa, Chaleee)",
+          "artist": "Ayite",
+          "soundcloudUrl": "https://soundcloud.com/ayite1210/afro-house-live-mix-omr-2025-hamburg-black-coffee-shimza-enoo-napa-chaleee-by-ayite",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-1aRI7xpkn2GR9AnN-ntF0Zg-t500x500.jpg",
+          "djVerdict": "Black Coffee + Shimza en vivo. La selección de Ayite me recuerda a mis propios sets."
+        },
+        {
+          "id": "mara-16",
+          "title": "All Day I Dream 2025 – Organic & Melodic House Mix",
+          "artist": "Raymas",
+          "soundcloudUrl": "https://soundcloud.com/raymas8/all-day-i-dream-2025-organic-melodic-house-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-3JkbJwdmwpyzMnEy-D0Kp7g-t500x500.jpg",
+          "djVerdict": "All Day I Dream es mi sello espiritual favorito. Orgánico, melódico, hecho para soñar despierto."
+        },
+        {
+          "id": "mara-17",
+          "title": "Best Deep House Mix 2025 Vol. #1",
+          "artist": "The Grand Sound",
+          "soundcloudUrl": "https://soundcloud.com/thegrandsound/best-deep-house-mix-2025-vol-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-AcfBupIzW8iXwz1v-F0uvog-t500x500.jpg",
+          "djVerdict": "Deep house clásico bien curado. Para los momentos donde quiero que la música respire."
+        }
+      ]
+    },
+    "dj-kei": {
+      "djName": "Kei Nomura",
+      "channel": "focus",
+      "pool": [
+        {
+          "id": "kei-01",
+          "title": "Ninja Tune Presents: Downtempo with Ben Böhmer (DJ Mix)",
+          "artist": "Ben Böhmer",
+          "soundcloudUrl": "https://soundcloud.com/ben-bohmer/ninja-tune-presents-downtempo-with-ben-bohmer-dj-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-YiNIqUVXfqRxL5ZY-yPEGJg-t500x500.jpg",
+          "djVerdict": "Ben Böhmer entiende el espacio. Este mix de Ninja Tune es arquitectura sonora — cada capa tiene su lugar. Perfecto para trabajar."
+        },
+        {
+          "id": "kei-02",
+          "title": "DJ Mixes by Tycho",
+          "artist": "Tycho",
+          "soundcloudUrl": "https://soundcloud.com/tycho/sets/tycho-dj-mixes",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-twb9CMzYqHNBBQyJ-Ht3QHA-t500x500.jpg",
+          "djVerdict": "Los Burning Man Sunrise sets de Tycho son exactamente mi filosofía — música que acompaña el amanecer sin imponerse."
+        },
+        {
+          "id": "kei-03",
+          "title": "Boards Of Canada Sleep Mix",
+          "artist": "naked flames",
+          "soundcloudUrl": "https://soundcloud.com/nakedflames/boards-of-canada-sleep-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000114613432-vi9c8f-t500x500.jpg",
+          "djVerdict": "Boards of Canada para dormir. Hay algo en la textura granulada de su sonido que me recuerda a las grabaciones de campo que hago en el tren."
+        },
+        {
+          "id": "kei-04",
+          "title": "Boards of Canada in 50 tracks",
+          "artist": "Jeff Chill",
+          "soundcloudUrl": "https://soundcloud.com/funky_jeff/boc-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000416840355-oe0sip-t500x500.jpg",
+          "djVerdict": "50 tracks de BoC es un viaje largo — como una caminata sin rumbo por Berlín. No necesitas saber a dónde vas."
+        },
+        {
+          "id": "kei-05",
+          "title": "A Boards of Canada mix",
+          "artist": "Skywave Systems",
+          "soundcloudUrl": "https://soundcloud.com/skywavesystems/a-boards-of-canada-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000001253992-rwfh35-t500x500.jpg",
+          "djVerdict": "Rarities y remixes de BoC. Me gusta cuando el material familiar se presenta de forma inesperada."
+        },
+        {
+          "id": "kei-06",
+          "title": "Music For Whales - Boards Of Canada",
+          "artist": "Electromagnética radio",
+          "soundcloudUrl": "https://soundcloud.com/electromagneticaradio/music-for-whales-boards-of-canada-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-I9c0GTKyBEKbZflj-t6rtXw-t500x500.jpg",
+          "djVerdict": "Música para ballenas. Solo el concepto ya me convence. Los interludios de BoC son como el silencio entre edificios."
+        },
+        {
+          "id": "kei-07",
+          "title": "Boards Of Canada | An Essential Mix",
+          "artist": "asleepfromday",
+          "soundcloudUrl": "https://soundcloud.com/asleepfromdaytoronto/boards-of-canada-essential-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-9WtK1zzvalko4yaq-IlnevA-t500x500.jpg",
+          "djVerdict": "Un essential mix de BoC curado con cuidado. Tiene la progresión que busco — empieza en silencio y termina en silencio."
+        },
+        {
+          "id": "kei-08",
+          "title": "Stimming - Deep House Amsterdam Mixtape #140",
+          "artist": "DHA FM (Deep House Amsterdam)",
+          "soundcloudUrl": "https://soundcloud.com/deep-house-amsterdam/stimming-deep-house-amsterdam-mixtape-140",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000107776902-1im2qr-t500x500.jpg",
+          "djVerdict": "Stimming tiene esa precisión alemana que respeto. Cada sonido está donde debe estar. Como un plano arquitectónico."
+        },
+        {
+          "id": "kei-09",
+          "title": "Stimming Live at Palapa Fusion 23",
+          "artist": "Stimming",
+          "soundcloudUrl": "https://soundcloud.com/stimming/stimming-live-palapa-fusion-23",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-isLy9nyfzuCQy4mR-HsSaEg-t500x500.jpg",
+          "djVerdict": "El primer set del domingo al amanecer en Fusion. Stimming entendió la hora — no forzó nada. Eso es lo que hago en los cafés."
+        },
+        {
+          "id": "kei-10",
+          "title": "Sunrise Session III",
+          "artist": "Ólafur Arnalds",
+          "soundcloudUrl": "https://soundcloud.com/olafur-arnalds/sets/sunrise-session-iii",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-ec278e03-4b07-45bc-8973-913cfc23283d-0-t500x500.jpg",
+          "djVerdict": "Ólafur es mi norte. Piano + loops + la cantidad justa de electrónica. Esto es lo que suena en mi cabeza cuando hago cerámica."
+        },
+        {
+          "id": "kei-11",
+          "title": "Melodic House Chillout Sunset Mix 2025 (RUFUS DU SOL, Ben Bohmer, Monolink, Jan Blomqvist)",
+          "artist": "Yven.Music",
+          "soundcloudUrl": "https://soundcloud.com/yvenmusic/melodic-house-chillout-sunset-mix-2025-rufus-du-sol-ben-bohmer-monolink-jan-blomqvist-gheist-tinlicker",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-n07WnZIh3F5TkrhK-OO5A1A-t500x500.jpg",
+          "djVerdict": "Más melódico de lo que suelo ir, pero Monolink y Jan Blomqvist tienen esa melancolía europea que me habla. Como Wim Wenders en música."
+        },
+        {
+          "id": "kei-12",
+          "title": "Melodic House Set (RÜFÜS DU SOL, Ben Böhmer, Jan Blomqvist, Jody Wisternoff, Yotto)",
+          "artist": "Phikey",
+          "soundcloudUrl": "https://soundcloud.com/phikeyofficial/puerto-alto-dj-set-mix-audio",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-UikVYgNMhC3icb1g-PpOvUw-t500x500.jpg",
+          "djVerdict": "Yotto siempre me sorprende — minimalista pero con emoción. Este set tiene buen balance entre movimiento y quietud."
+        },
+        {
+          "id": "kei-13",
+          "title": "Downtempo Chill 2024 - Burning Man - Tulum - Ibiza",
+          "artist": "Bar 25 Music",
+          "soundcloudUrl": "https://soundcloud.com/bar25/sets/downtempo",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-lR1CIv6yJA3HcEmp-WLfDNQ-t500x500.jpg",
+          "djVerdict": "Bar 25 es uno de esos lugares en Berlín donde el tiempo se detiene. Su curaduría downtempo tiene ese espíritu."
+        },
+        {
+          "id": "kei-14",
+          "title": "Acid Pauli - Full DJ set from Polygon Live @ Wonderfruit 2023",
+          "artist": "Polygon Live",
+          "soundcloudUrl": "https://soundcloud.com/polygon_live/acid-pauli-wonderfruit2023",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-Rw40B2oNjAEkHC7Y-J8VbDw-t500x500.jpg",
+          "djVerdict": "Acid Pauli en Wonderfruit — más psicodélico de mi zona habitual, pero tiene esa exploración que me atrae. Como un field recording que se vuelve música."
+        }
+      ]
+    },
+    "dj-zola": {
+      "djName": "Zola Mbeki",
+      "channel": "intensity",
+      "pool": [
+        {
+          "id": "zola-01",
+          "title": "Indlu iYasha - DJ Mix",
+          "artist": "DJ LAG",
+          "soundcloudUrl": "https://soundcloud.com/realdjlag/indlu-iyasha",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-5YZU2zXmgwh5NIoc-LUl3AQ-t500x500.jpg",
+          "djVerdict": "DJ Lag es el rey del gqom por algo. Este mix me recuerda a los taxis de Joburg — el bass no para y tú no quieres que pare."
+        },
+        {
+          "id": "zola-02",
+          "title": "DJ Lag X Ape Drums - GQTECH Mix",
+          "artist": "DJ LAG",
+          "soundcloudUrl": "https://soundcloud.com/realdjlag/dj-lag-x-ape-drums-gqtech-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-L7cjgy6Ed9HuBpaT-mR6tKA-t500x500.jpg",
+          "djVerdict": "GQTECH — gqom + techno. Esto es exactamente lo que hago: mezclar la crudeza de Durban con la oscuridad de Londres."
+        },
+        {
+          "id": "zola-03",
+          "title": "Recognise: DJ Lag",
+          "artist": "DJ Mag",
+          "soundcloudUrl": "https://soundcloud.com/djmag/recognise-012-dj-lag",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000505891296-790kmg-t500x500.jpg",
+          "djVerdict": "DJ Mag reconociendo a Lag. Este mix tiene la agresividad justa — no es violencia, es fuerza."
+        },
+        {
+          "id": "zola-04",
+          "title": "In Session: DJ Lag",
+          "artist": "Mixmag",
+          "soundcloudUrl": "https://soundcloud.com/mixmag-1/in-session-dj-lag",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-yp9JolMpO0m5rEb1-n2twCQ-t500x500.jpg",
+          "djVerdict": "Gqom, afrotech y sgubhu juntos. Lag cambia entre estilos como si fuera un round de boxeo. Me encanta."
+        },
+        {
+          "id": "zola-05",
+          "title": "Dummy Mix 492 // DJ Lag",
+          "artist": "DMY",
+          "soundcloudUrl": "https://soundcloud.com/dummymag/dummy-mix-492-dj-lag",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000257594867-ue9arg-t500x500.jpg",
+          "djVerdict": "Dombolo y Khonkolo — dos estilos de gqom que mi tía escuchaba en el mercado. Esto es mi infancia a 140bpm."
+        },
+        {
+          "id": "zola-06",
+          "title": "INDIRA PAGANOTTO : TIME WARP 2025 @ Stage 1 Closing Set",
+          "artist": "Indira Paganotto",
+          "soundcloudUrl": "https://soundcloud.com/indirapaganotto/indira-paganotto-time-warp-2025-stage-1-closing-set",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-Iy1ywzNRfa3JBwM1-z8vHaA-t500x500.jpg",
+          "djVerdict": "Indira cerrando Time Warp. Psy-techno con acid. 2 horas de no pensar, solo sentir el piso. Esto es lo que busco."
+        },
+        {
+          "id": "zola-07",
+          "title": "INDIRA PAGANOTTO : EXIT FESTIVAL 2023 @ Dance Arena Closing Set",
+          "artist": "Indira Paganotto",
+          "soundcloudUrl": "https://soundcloud.com/indirapaganotto/indira-paganotto-exit-festival-full-set",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-Nz7pjXNEjCbBs13i-gh5Z3A-t500x500.jpg",
+          "djVerdict": "Cerrando EXIT Festival. Dance Arena. Miles de personas. Indira no baja la intensidad ni un segundo. Respeto."
+        },
+        {
+          "id": "zola-08",
+          "title": "Hard Techno to Melodic Tekno Set (Indira Paganotto, Sköne, Le Wanski)",
+          "artist": "Sketogan",
+          "soundcloudUrl": "https://soundcloud.com/sketogan/hard-techno-to-melodic-tekno-set-indira-paganotto-skone-le-wanski",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-pkH4HoRlXyzEUFOB-hWpgjg-t500x500.jpg",
+          "djVerdict": "De hard techno a melodic tekno. Me gusta ese arco — empezar destruyendo y terminar hipnótica. Es lo que hago en mis sets de 5 horas."
+        },
+        {
+          "id": "zola-09",
+          "title": "2025 GQOM, 3STEP MIX",
+          "artist": "imanaaliyah_ / 16THSS",
+          "soundcloudUrl": "https://soundcloud.com/16thss/2025-gqom-3step-mix-16thss",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-7M6OnJCLU9Thvqy7-y0Y95Q-t500x500.jpg",
+          "djVerdict": "Gqom y 3-step fresco, 2025. Esto es lo que suena ahora mismo en Durban. Hay que estar al día con las raíces."
+        },
+        {
+          "id": "zola-10",
+          "title": "Dj Pepino - After Match Gqom Mix 2024",
+          "artist": "African Music Concepts (Durban Gqom)",
+          "soundcloudUrl": "https://soundcloud.com/afrimusico/dj-pepino-after-match-gqom-mix-2024",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-1OGwaqGJQO11YzLP-fvzdHw-t500x500.jpg",
+          "djVerdict": "After Match — gqom para después del partido. En Joburg la música no para cuando termina el juego, solo cambia de lugar."
+        },
+        {
+          "id": "zola-11",
+          "title": "Gqom Party Mix 2025 - Distruction Boyz, Mr Thela, Rhass & More",
+          "artist": "Ceebeaats",
+          "soundcloudUrl": "https://soundcloud.com/user-686369754/qgom-party-mix-2025-ceebeaats",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-I0GEq2Szyk4iwOUW-SRFHcg-t500x500.jpg",
+          "djVerdict": "Distruction Boyz. Mr Thela. Los clásicos del gqom. Esto lo pondría al principio de mi set para que la gente sepa dónde está."
+        },
+        {
+          "id": "zola-12",
+          "title": "Chrisman Mix 2024 - Amapiano, Bailefunk, Gqom, Afrobeats, Kuduro",
+          "artist": "Chrisman",
+          "soundcloudUrl": "https://soundcloud.com/chrisman_mazambi/chrisman-mix-2024-amapiano-bailefunk-gqom-afrobeats-kuduro-bootleg-dubstep",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-l99ednHzRpLgCykZ-b8bedg-t500x500.jpg",
+          "djVerdict": "Bailefunk + gqom + kuduro. Esto es el club global — Sudáfrica, Brasil, Angola, todo en una pista. Me vuelve loca."
+        },
+        {
+          "id": "zola-13",
+          "title": "SOUTH AFRICA DJ MIX - AMAPIANO, GQOM AND 3 STEP",
+          "artist": "ninette",
+          "soundcloudUrl": "https://soundcloud.com/n1nette/south-africa-dj-mix-amapiano-gqom-and-3-step-vuka-e-pop-bengicela-ii-ninette-selects",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-whtay31GzI1Yhkwr-Mvxygg-t500x500.jpg",
+          "djVerdict": "Ninette selects — amapiano, gqom y 3-step. La transición entre los tres estilos es lo que hace a Sudáfrica única. Esto suena a casa."
+        }
+      ]
+    },
+    "dj-paloma": {
+      "djName": "Paloma del Río",
+      "channel": "flow",
+      "pool": [
+        {
+          "id": "paloma-01",
+          "title": "Nicola Cruz Boiler Room Tulum x Comunite Live Set",
+          "artist": "Boiler Room",
+          "soundcloudUrl": "https://soundcloud.com/platform/nicola-cruz",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000162380066-vm9uhh-t500x500.jpg",
+          "djVerdict": "Nicola Cruz en Tulum. Esto es lo que pongo cuando llegan los primeros amigos al bar — ritual, raíz, pero con groove."
+        },
+        {
+          "id": "paloma-02",
+          "title": "Nicola Cruz live @ Iguazú Falls for Cercle",
+          "artist": "Cercle",
+          "soundcloudUrl": "https://soundcloud.com/cerclelive/nicola-cruz-live-iguazu-falls-for-cercle",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-xlfAlcMoI72PAvcA-0uldWQ-t500x500.jpg",
+          "djVerdict": "Nicola Cruz frente a las cataratas de Iguazú. La naturaleza como escenario. Esto me recuerda a mi abuela cocinando con boleros — lo sagrado y lo cotidiano juntos."
+        },
+        {
+          "id": "paloma-03",
+          "title": "Mixtape: TIPICA Sound",
+          "artist": "Quantic",
+          "soundcloudUrl": "https://soundcloud.com/quantic/mixtape-tipica-sound",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000043807425-g6w8u0-t500x500.jpg",
+          "djVerdict": "Quantic explorando la cumbia típica panameña. Este tipo entiende el Caribe como pocos gringos. Suena a mercado, a brisa, a ron."
+        },
+        {
+          "id": "paloma-04",
+          "title": "Chancha Via Circuito - Amansará Mixtape",
+          "artist": "WONDERWHEEL Recordings",
+          "soundcloudUrl": "https://soundcloud.com/wonderwheel-recordings/chancha-via-circuito-amansara-mixtape",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000090446469-0hodg0-t500x500.jpg",
+          "djVerdict": "Chancha es el poeta del folklore electrónico. Este mixtape suena a Buenos Aires de noche pero con el calor de Barranquilla."
+        },
+        {
+          "id": "paloma-05",
+          "title": "Sanctuary Mix #10: Chancha via Circuito",
+          "artist": "Movimientos",
+          "soundcloudUrl": "https://soundcloud.com/movimientos/sanctuary-mix-10-chancha-via-circuito",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-NAozCyqIOKyaWlQc-zNCFzg-t500x500.jpg",
+          "djVerdict": "Otro mix de Chancha pero con un mood más contemplativo. Lo pondría en el bar cuando ya todos están sentados y la conversación fluye."
+        },
+        {
+          "id": "paloma-06",
+          "title": "Groovy Sundays 2025 Vol 1 — Disco House, Nu Disco, Funk, Indie Dance",
+          "artist": "natalie rose",
+          "soundcloudUrl": "https://soundcloud.com/natalie_rose_music/groovy-sundays-2025-vol-1-disco-house-nu-disco-funk-indie-dance",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-c0nTsbJqW3q7OSRo-7MfXAw-t500x500.jpg",
+          "djVerdict": "Groovy Sundays — hasta el nombre es perfecto. Nu disco y funk para un domingo con las ventanas abiertas. Esto soy yo."
+        },
+        {
+          "id": "paloma-07",
+          "title": "NU DISCO SET 1",
+          "artist": "Ahmet Kilic",
+          "soundcloudUrl": "https://soundcloud.com/ahmet-kilic/nu-disco-indie-dance-set-ahmet-kilic",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000145692296-83jv4q-t500x500.jpg",
+          "djVerdict": "Nu disco limpio, bien mezclado. No reinventa nada pero hace lo que tiene que hacer — ponerte a mover la cabeza sin darte cuenta."
+        },
+        {
+          "id": "paloma-08",
+          "title": "NU DISCO SET 6",
+          "artist": "Ahmet Kilic",
+          "soundcloudUrl": "https://soundcloud.com/ahmet-kilic/nu-disco-indie-dance-set-6-ahmet-kilic",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-gzed1RhM7IbzlKU1-9yj6Ug-t500x500.jpg",
+          "djVerdict": "El volumen 6 tiene más personalidad que el 1. Ahmet fue encontrando su voz. Buen balance entre indie y dance."
+        },
+        {
+          "id": "paloma-09",
+          "title": "Nu Disco House Party Mix 2024",
+          "artist": "Chris Lawes",
+          "soundcloudUrl": "https://soundcloud.com/djchrislawes/disco-house-mix-2024",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-88C7NmangzIZgvyK-jCJc8Q-t500x500.jpg",
+          "djVerdict": "House party mix — exacto. Esto es lo que suena cuando mis amigos vienen a cocinar los viernes."
+        },
+        {
+          "id": "paloma-10",
+          "title": "Nu Disco Mix (Todd Terje, Dimitri From Paris, Aeroplane, Claptone)",
+          "artist": "DJ Rumor",
+          "soundcloudUrl": "https://soundcloud.com/djrumor/nu-disco-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000041574843-f9mhi0-t500x500.jpg",
+          "djVerdict": "Todd Terje y Dimitri From Paris juntos. Esto es nu disco con clase — como un pastél de nata recién hecho."
+        },
+        {
+          "id": "paloma-11",
+          "title": "Melodic Afro House Summer 2024 - Ibiza Sunset | Keinemusik Black Coffee Arodes Moojo",
+          "artist": "Dave Bin",
+          "soundcloudUrl": "https://soundcloud.com/dave-bin/melodic-organic-afro-house-summer-2024-ibiza-sunset-keinemusik-blackcoffee-arodes-camelphat-fahlberg-moojo-carlita",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-JchqxMXDACX3v8Su-FtOIpw-t500x500.jpg",
+          "djVerdict": "Mara me recomendó este. Tiene razón — Carlita y Moojo le dan el toque melódico que me gusta. Esto suena a verano en Lisboa."
+        },
+        {
+          "id": "paloma-12",
+          "title": "All Day I Dream 2025 – Organic & Melodic House Mix",
+          "artist": "Raymas",
+          "soundcloudUrl": "https://soundcloud.com/raymas8/all-day-i-dream-2025-organic-melodic-house-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-3JkbJwdmwpyzMnEy-D0Kp7g-t500x500.jpg",
+          "djVerdict": "Orgánico, melódico, para soñar. Esto es lo que pondría cuando el bar se vacía y quedo sola recogiendo con una copa de vino."
+        }
+      ]
+    }
+  }
+}
