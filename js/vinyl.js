@@ -441,8 +441,9 @@ const Vinyl = (() => {
   var plugSfx1 = new Audio('assets/effects/plug-sfx-1.mp3');
   var plugSfx2 = new Audio('assets/effects/plug-sfx-2.mp3');
 
-  // Disconnected tip offset for right cable (tablet vs desktop)
+  // Disconnected tip offset for right cable (mobile / tablet / desktop)
   function rightTipOffset() {
+    if (window.innerWidth <= 430) return { dx: 20, dy: -50 };
     if (window.innerWidth <= 768) return { dx: 20, dy: -50 };
     return { dx: -70, dy: 40 };
   }
@@ -463,21 +464,22 @@ const Vinyl = (() => {
       return connectedPoints;
     }
 
-    var ssmEl = document.querySelector('.ssm-logo');
+    var providerEl = document.querySelector('.provider-logo');
     var djEl = document.getElementById('dj-zone');
     var albumEl = document.getElementById('album-cover');
 
-    // SSM: below-center of logo
-    var ssm = elPos(ssmEl, 0.5, 1.3);
+    // Provider: below-center of logo
+    var provider = elPos(providerEl, 0.5, 1.3);
     // DJ left
     var djL = elPos(djEl, 0.3, 0.73);
     // DJ right
     var djR = elPos(djEl, 0.75, 0.76);
     // Album
+    var isMobile = window.innerWidth <= 576;
     var isTablet = window.innerWidth <= 768;
-    var alb = isTablet ? elPos(albumEl, 0.20, 0.07) : elPos(albumEl, 0.07, 0.25);
+    var alb = isMobile ? elPos(albumEl, 0.75, 0.07) : isTablet ? elPos(albumEl, 0.20, 0.07) : elPos(albumEl, 0.07, 0.25);
 
-    return { ssm: ssm, djL: djL, djR: djR, alb: alb };
+    return { provider: provider, djL: djL, djR: djR, alb: alb };
   }
 
   // Original SVG path data from Figma exports
@@ -555,7 +557,7 @@ const Vinyl = (() => {
   function updateCables() {
     var cableLeft = document.getElementById('cable-left');
     var cableRight = document.getElementById('cable-right');
-    var plugSSM = document.getElementById('plug-ssm');
+    var plugProvider = document.getElementById('plug-provider');
     var plugDJL = document.getElementById('plug-dj-left');
     var plugDJR = document.getElementById('plug-dj-right');
     var plugAlb = document.getElementById('plug-album');
@@ -565,8 +567,8 @@ const Vinyl = (() => {
     var pts = getCablePoints();
 
     // Update plug positions
-    plugSSM.setAttribute('cx', pts.ssm.x);
-    plugSSM.setAttribute('cy', pts.ssm.y);
+    plugProvider.setAttribute('cx', pts.provider.x);
+    plugProvider.setAttribute('cy', pts.provider.y);
     plugDJL.setAttribute('cx', pts.djL.x);
     plugDJL.setAttribute('cy', pts.djL.y);
     plugDJR.setAttribute('cx', pts.djR.x);
@@ -576,7 +578,7 @@ const Vinyl = (() => {
 
     // Update cable paths
     if (cableState.connected) {
-      var ld = buildLeftPath(pts.ssm.x, pts.ssm.y, pts.djL.x, pts.djL.y, pts.ssm.x, pts.ssm.y, pts.djL.x, pts.djL.y);
+      var ld = buildLeftPath(pts.provider.x, pts.provider.y, pts.djL.x, pts.djL.y, pts.provider.x, pts.provider.y, pts.djL.x, pts.djL.y);
       var rd = buildRightPath(pts.djR.x, pts.djR.y, pts.alb.x, pts.alb.y, pts.djR.x, pts.djR.y, pts.alb.x, pts.alb.y);
       cableLeft.setAttribute('d', ld);
       cableRight.setAttribute('d', rd);
@@ -598,12 +600,12 @@ const Vinyl = (() => {
     var pts = getCablePoints();
 
     // Position plugs only (not cables — we set those to disconnected below)
-    var plugSSM = document.getElementById('plug-ssm');
+    var plugProvider = document.getElementById('plug-provider');
     var plugDJL = document.getElementById('plug-dj-left');
     var plugDJR = document.getElementById('plug-dj-right');
     var plugAlb = document.getElementById('plug-album');
-    plugSSM.setAttribute('cx', pts.ssm.x);
-    plugSSM.setAttribute('cy', pts.ssm.y);
+    plugProvider.setAttribute('cx', pts.provider.x);
+    plugProvider.setAttribute('cy', pts.provider.y);
     plugDJL.setAttribute('cx', pts.djL.x);
     plugDJL.setAttribute('cy', pts.djL.y);
     plugDJR.setAttribute('cx', pts.djR.x);
@@ -613,7 +615,7 @@ const Vinyl = (() => {
 
     // Disconnected: some endpoints start already connected (0,0 offset)
     var lp = {
-      sx: pts.ssm.x, sy: pts.ssm.y,           // already connected
+      sx: pts.provider.x, sy: pts.provider.y,           // already connected
       ex: pts.djL.x - 40, ey: pts.djL.y + 120,
     };
     var rOff = rightTipOffset();
@@ -623,7 +625,7 @@ const Vinyl = (() => {
     };
 
     // Connected positions (shape reference)
-    var csx = pts.ssm.x, csy = pts.ssm.y, cex = pts.djL.x, cey = pts.djL.y;
+    var csx = pts.provider.x, csy = pts.provider.y, cex = pts.djL.x, cey = pts.djL.y;
     var crsx = pts.djR.x, crsy = pts.djR.y, crex = pts.alb.x, crey = pts.alb.y;
 
     // Set initial disconnected state
@@ -702,16 +704,16 @@ const Vinyl = (() => {
   // Get the actual screen positions of all control points for a cable
   function getLeftControlPoints(pts) {
     var osx = 18.25, osy = 0.2, oex = 363.75, oey = 420.7;
-    var scaleX = (pts.djL.x - pts.ssm.x) / (oex - osx);
-    var scaleY = (pts.djL.y - pts.ssm.y) / (oey - osy);
-    var offX = pts.ssm.x - osx * scaleX;
-    var offY = pts.ssm.y - osy * scaleY;
+    var scaleX = (pts.djL.x - pts.provider.x) / (oex - osx);
+    var scaleY = (pts.djL.y - pts.provider.y) / (oey - osy);
+    var offX = pts.provider.x - osx * scaleX;
+    var offY = pts.provider.y - osy * scaleY;
     function tx(x) { return offX + x * scaleX; }
     function ty(y) { return offY + y * scaleY; }
 
     return [
       // M start
-      { x: pts.ssm.x, y: pts.ssm.y, fixed: true },
+      { x: pts.provider.x, y: pts.provider.y, fixed: true },
       // C1
       { x: tx(9.58), y: ty(65.2) },
       { x: tx(-0.05), y: ty(225.2) },
@@ -841,13 +843,13 @@ const Vinyl = (() => {
 
       if (which === 'left') {
         var tip = { ex: pts.djL.x, ey: pts.djL.y };
-        var csx = pts.ssm.x, csy = pts.ssm.y, cex = pts.djL.x, cey = pts.djL.y;
+        var csx = pts.provider.x, csy = pts.provider.y, cex = pts.djL.x, cey = pts.djL.y;
         disconnectTween = gsap.to(tip, {
           ex: pts.djL.x - 40, ey: pts.djL.y + 120,
           duration: 0.4,
           ease: 'power2.out',
           onUpdate: function () {
-            var d = buildLeftPath(pts.ssm.x, pts.ssm.y, tip.ex, tip.ey, csx, csy, cex, cey);
+            var d = buildLeftPath(pts.provider.x, pts.provider.y, tip.ex, tip.ey, csx, csy, cex, cey);
             cableLeft.setAttribute('d', d);
             if (hitL) hitL.setAttribute('d', d);
           },
@@ -882,13 +884,13 @@ const Vinyl = (() => {
 
       if (which === 'left') {
         var tip = { ex: pts.djL.x - 40, ey: pts.djL.y + 120 };
-        var csx = pts.ssm.x, csy = pts.ssm.y, cex = pts.djL.x, cey = pts.djL.y;
+        var csx = pts.provider.x, csy = pts.provider.y, cex = pts.djL.x, cey = pts.djL.y;
         disconnectTween = gsap.to(tip, {
           ex: pts.djL.x, ey: pts.djL.y,
           duration: 0.5,
           ease: 'power2.in',
           onUpdate: function () {
-            var d = buildLeftPath(pts.ssm.x, pts.ssm.y, tip.ex, tip.ey, csx, csy, cex, cey);
+            var d = buildLeftPath(pts.provider.x, pts.provider.y, tip.ex, tip.ey, csx, csy, cex, cey);
             cableLeft.setAttribute('d', d);
             if (hitL) hitL.setAttribute('d', d);
           },
@@ -1016,10 +1018,10 @@ const Vinyl = (() => {
 
   function buildLeftPathWithOffsets(pts, off) {
     var osx = 18.25, osy = 0.2, oex = 363.75, oey = 420.7;
-    var scaleX = (pts.djL.x - pts.ssm.x) / (oex - osx);
-    var scaleY = (pts.djL.y - pts.ssm.y) / (oey - osy);
-    var offX = pts.ssm.x - osx * scaleX;
-    var offY = pts.ssm.y - osy * scaleY;
+    var scaleX = (pts.djL.x - pts.provider.x) / (oex - osx);
+    var scaleY = (pts.djL.y - pts.provider.y) / (oey - osy);
+    var offX = pts.provider.x - osx * scaleX;
+    var offY = pts.provider.y - osy * scaleY;
     function tx(x) { return offX + x * scaleX; }
     function ty(y) { return offY + y * scaleY; }
 
@@ -1027,7 +1029,7 @@ const Vinyl = (() => {
       return (baseX + off[i].x) + ',' + (baseY + off[i].y);
     }
 
-    return 'M ' + p(0, pts.ssm.x, pts.ssm.y) +
+    return 'M ' + p(0, pts.provider.x, pts.provider.y) +
       ' C ' + p(1, tx(9.58), ty(65.2)) + ' ' + p(2, tx(-0.05), ty(225.2)) + ' ' + p(3, tx(34.75), ty(277.2)) +
       ' C ' + p(4, tx(78.25), ty(342.2)) + ' ' + p(5, tx(171.25), ty(228.7)) + ' ' + p(6, tx(94.25), ty(200.7)) +
       ' C ' + p(7, tx(17.25), ty(172.7)) + ' ' + p(8, tx(-22.75), ty(298.2)) + ' ' + p(9, tx(17.25), ty(382.2)) +

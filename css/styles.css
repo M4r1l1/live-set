@@ -108,7 +108,7 @@ body {
 }
 
 /* ---- SSM Logo — top left ---- */
-.ssm-link {
+.provider-link {
   position: absolute;
   left: 3.8%;
   top: 64px;
@@ -116,15 +116,15 @@ body {
   transition: transform 0.2s ease;
 }
 
-.ssm-link:hover {
+.provider-link:hover {
   transform: scale(1.08);
 }
 
-.ssm-link:active {
+.provider-link:active {
   transform: scale(0.95);
 }
 
-.ssm-logo {
+.provider-logo {
   height: 50px;
   width: auto;
 }
@@ -226,6 +226,7 @@ body {
 .dj-name-area__name {
   max-width: 280px;
   text-align: center;
+  word-spacing: 100vw;
 }
 
 /* ---- Genre Tags — scattered right side ---- */
@@ -815,7 +816,7 @@ body {
    RESPONSIVE — 1280×800 (HD laptops)
    ============================================= */
 @media (max-width: 1280px) {
-  .ssm-logo {
+  .provider-logo {
     height: 35px;
   }
   .logo__text {
@@ -939,7 +940,11 @@ body {
    RESPONSIVE — 768×1024 (Tablet portrait)
    ============================================= */
 @media (max-width: 768px) {
-  .ssm-link {
+  .playback-zone__cover,
+  .playback-zone__behind {
+    pointer-events: none;
+  }
+  .provider-link {
     top: 54px;
   }
   .genre-area {
@@ -954,5 +959,192 @@ body {
   }
   .footer-link {
     display: none;
+  }
+}
+
+/* --- Phablets / large phones landscape (576px) --- */
+@media (max-width: 576px) {
+  .logo__text {
+    width: 266px;
+    height: 42px;
+  }
+  .logo__liveset-wrap {
+    width: 63px;
+    height: 42px;
+  }
+  .provider-link {
+    top: 50px;
+  }
+  .dj-info__text {
+    display: none;
+  }
+  .dj-info__arrow {
+    display: none;
+  }
+  .genre-area {
+    right: 1%;
+    top: 18%;
+  }
+  .genre-area__tag {
+    font-size: 30px;
+  }
+  .genre-area__tag:nth-child(2) {
+    top: 30px;
+  }
+  .genre-area__tag:nth-child(3) {
+    top: 60px;
+  }
+  .main .btn--orange {
+    top: 53%;
+  }
+  .playback-zone__behind {
+    top: 15px;
+  }
+  .dj-zone {
+    top: 18%;
+  }
+  .date {
+    left: 50%;
+    top: 96px;
+    font-size: 30px;
+  }
+}
+
+/* --- iPhone 14 Pro Max, 15 Plus (430×932) --- */
+@media (max-width: 430px) {
+  .main {
+    width: 100%;
+  }
+  .provider-link {
+    left: -90px;
+  }
+  .dj-zone {
+    width: 400px;
+    height: 378px;
+  }
+  .playback-zone__behind {
+    top: 30px;
+  }
+  .logo__text {
+    width: 213px;
+    height: 34px;
+  }
+  .logo__liveset-wrap {
+    width: 50px;
+    height: 34px;
+  }
+  .dj-name-area {
+    left: 0;
+    top: 26%;
+  }
+  .dj-name-area__label {
+    font-size: 40px;
+  }
+  .dj-name-area__name {
+    font-size: 40px;
+  }
+  .genre-area {
+    right: 3%;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding-right: 8px;
+  }
+  .genre-area__tag,
+  .genre-area__tag:nth-child(1),
+  .genre-area__tag:nth-child(2),
+  .genre-area__tag:nth-child(3) {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+  .genre-area__tag:nth-child(1),
+  .genre-area__tag:nth-child(3) {
+    margin-left: 20px;
+  }
+  .genre-area__tag {
+    font-size: 26px;
+  }
+  .date {
+    font-size: 26px;
+    top: 80px;
+  }
+  .main .btn--orange {
+    top: 50%;
+  }
+  .playback-zone {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: 290px;
+    bottom: auto;
+    top: 60%;
+  }
+  .debug-controls {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 35px;
+  }
+}
+
+/* --- iPhone 14, 15 (390×844) --- */
+@media (max-width: 390px) {
+}
+
+/* --- Galaxy S21, small Android (360×800) --- */
+@media (max-width: 360px) {
+  .album-stack {
+    top: -120px;
+    right: -120px;
+  }
+  .album-stack__card {
+    width: 180px;
+    height: 180px;
+  }
+  .dj-name-area {
+    left: -12%;
+  }
+  .dj-name-area__label {
+    font-size: 36px;
+  }
+  .dj-name-area__name {
+    font-size: 36px;
+  }
+  .genre-area {
+    right: -4%;
+  }
+  .dj-zone {
+    width: 324px;
+    height: 306px;
+  }
+  .splash {
+    gap: 20px;
+  }
+  .splash__nicehub {
+    width: 232px;
+    height: 36px;
+  }
+  .splash__liveset-wrap {
+    width: 64px;
+    height: 43px;
+  }
+  .btn--black,
+  .btn--orange {
+    width: 94px;
+    height: 39px;
+  }
+  .main .btn--orange {
+    top: 48%;
+  }
+  .debug-controls {
+    bottom: 15px;
+  }
+  .playback-zone {
+    top: 55%;
   }
 }

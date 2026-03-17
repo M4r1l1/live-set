@@ -11,6 +11,12 @@
 
   function getDJNameLeft(wordCount) {
     const isQHD = window.innerWidth >= 2560;
+    const isTinyMobile = window.innerWidth <= 360;
+    const isSmallMobile = window.innerWidth <= 430;
+    const isMobile = window.innerWidth <= 576;
+    if (isTinyMobile) return '-12%';
+    if (isSmallMobile) return '0';
+    if (isMobile) return '8%';
     if (wordCount === 1) return isQHD ? '31%' : '20%';
     return isQHD ? '31%' : '20%';
   }

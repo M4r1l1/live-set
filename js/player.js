@@ -93,10 +93,29 @@ const Player = (() => {
     if (bgWorker) bgWorker.postMessage({ cmd: 'stop' });
   }
 
-  // --- Background-safe track advance ---
-  // Loads the next track on the SAME widget that's currently playing.
-  // Since that iframe is already "audible", the browser may allow load().
-  // No crossfade (brief silence), but works in background tabs.
+  // Fade duration for track transitions (ms)
+  const TRANSITION_FADE_MS = 2000;
+
+  // Fade a specific widget from startVol → targetVol
+  function fadeWidgetVol(w, startVol, targetVol, durationMs, cb) {
+    const steps = 20;
+    const stepMs = durationMs / steps;
+    const delta = (targetVol - startVol) / steps;
+    let step = 0;
+    const timer = setInterval(() => {
+      step++;
+      if (step >= steps) {
+        clearInterval(timer);
+        w.setVolume(targetVol);
+        if (cb) cb();
+      } else {
+        w.setVolume(Math.round(startVol + delta * step));
+      }
+    }, stepMs);
+  }
+
+  // --- Track advance with fade out → load → fade in ---
+  // Same widget, same logic — just wraps it with volume fades.
   function startCrossfadeOrAdvance() {
     if (crossfading) return;
     cancelTimer();
@@ -106,50 +125,59 @@ const Player = (() => {
     if (!nextAlbum) { advance(); return; }
 
     crossfading = true;
-    const w = getActive(); // Same widget that's currently playing!
+    const w = getActive();
+    const curVol = muted ? 0 : volume;
 
-    console.log('[Player] Loading next track on ACTIVE widget, bg:', document.hidden);
+    console.log('[Player] Fading out → loading next track, bg:', document.hidden);
 
-    w.load(nextAlbum.soundcloudUrl, {
-      auto_play: true,
-      show_artwork: false,
-      show_comments: false,
-      show_playcount: false,
-      show_user: false,
-      hide_related: true,
-      visual: false,
-      callback: function () {
-        console.log('[Player] Next track loaded on active widget OK');
-        w.setVolume(muted ? 0 : volume);
+    // Step 1: Fade out current track
+    fadeWidgetVol(w, curVol, 0, TRANSITION_FADE_MS, function () {
+      // Step 2: Load next track on same widget
+      w.load(nextAlbum.soundcloudUrl, {
+        auto_play: true,
+        show_artwork: false,
+        show_comments: false,
+        show_playcount: false,
+        show_user: false,
+        hide_related: true,
+        visual: false,
+        callback: function () {
+          console.log('[Player] Next track loaded — fading in');
+          w.setVolume(0);
 
-        currentIndex = nextIdx;
-        preloadedIndex = -1;
-        crossfading = false;
+          currentIndex = nextIdx;
+          preloadedIndex = -1;
 
-        // Get duration and schedule next timer
-        w.getDuration(function (dur) {
-          if (dur > 0) {
-            trackDuration = dur;
-            trackStartTime = Date.now();
-            scheduleTimer();
-          }
-        });
+          // Step 3: Fade in new track
+          fadeWidgetVol(w, 0, curVol, TRANSITION_FADE_MS, function () {
+            crossfading = false;
+          });
 
-        // Notify app.js to update UI
-        advancing = true;
-        if (onTrackEnd) onTrackEnd();
-        setTimeout(() => { advancing = false; }, 500);
-      },
+          // Get duration and schedule next timer
+          w.getDuration(function (dur) {
+            if (dur > 0) {
+              trackDuration = dur;
+              trackStartTime = Date.now();
+              scheduleTimer();
+            }
+          });
+
+          // Notify app.js to update UI
+          advancing = true;
+          if (onTrackEnd) onTrackEnd();
+          setTimeout(() => { advancing = false; }, 500);
+        },
+      });
+
+      // Fallback: if load never fires (blocked in background)
+      setTimeout(() => {
+        if (crossfading) {
+          console.log('[Player] Load timeout — waiting for tab focus');
+          crossfading = false;
+          w.setVolume(curVol);
+        }
+      }, 8000);
     });
-
-    // Fallback: if load never fires (blocked in background), the FINISH event
-    // or visibilitychange resync will handle it when user returns.
-    setTimeout(() => {
-      if (crossfading) {
-        console.log('[Player] Active widget load timeout — waiting for tab focus');
-        crossfading = false;
-      }
-    }, 8000);
   }
 
   // --- Init ---
