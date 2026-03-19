@@ -441,10 +441,16 @@ const Vinyl = (() => {
   var plugSfx1 = new Audio('assets/effects/plug-sfx-1.mp3');
   var plugSfx2 = new Audio('assets/effects/plug-sfx-2.mp3');
 
+  // Disconnected tip offset for left cable
+  function leftTipOffset() {
+    if (window.innerWidth <= 430) return { dx: 20, dy: 40 };
+    return { dx: -40, dy: 120 };
+  }
+
   // Disconnected tip offset for right cable (mobile / tablet / desktop)
   function rightTipOffset() {
     if (window.innerWidth <= 430) return { dx: 20, dy: -50 };
-    if (window.innerWidth <= 768) return { dx: 20, dy: -50 };
+    if (window.innerWidth <= 912) return { dx: 20, dy: -50 };
     return { dx: -70, dy: 40 };
   }
 
@@ -476,7 +482,7 @@ const Vinyl = (() => {
     var djR = elPos(djEl, 0.75, 0.76);
     // Album
     var isMobile = window.innerWidth <= 576;
-    var isTablet = window.innerWidth <= 768;
+    var isTablet = window.innerWidth <= 912;
     var alb = isMobile ? elPos(albumEl, 0.75, 0.07) : isTablet ? elPos(albumEl, 0.20, 0.07) : elPos(albumEl, 0.07, 0.25);
 
     return { provider: provider, djL: djL, djR: djR, alb: alb };
@@ -614,9 +620,10 @@ const Vinyl = (() => {
     plugAlb.setAttribute('cy', pts.alb.y);
 
     // Disconnected: some endpoints start already connected (0,0 offset)
+    var lOff = leftTipOffset();
     var lp = {
       sx: pts.provider.x, sy: pts.provider.y,           // already connected
-      ex: pts.djL.x - 40, ey: pts.djL.y + 120,
+      ex: pts.djL.x + lOff.dx, ey: pts.djL.y + lOff.dy,
     };
     var rOff = rightTipOffset();
     var rp = {
@@ -667,15 +674,15 @@ const Vinyl = (() => {
       cableState.connected = true;
       connectedPoints = getCablePoints();
       updateCables(); // redraw with correct positions so physics loop doesn't cause a jump
-      window.addEventListener('resize', function () {
-        // Recalculate frozen positions on resize (cover is static then)
+      function recalcCables() {
         connectedPoints = null;
         cableState.connected = false;
         var fresh = getCablePoints();
         cableState.connected = true;
         connectedPoints = fresh;
         updateCables();
-      });
+      }
+      window.addEventListener('resize', recalcCables);
       initCableInteraction();
       // Dispatch event so app.js knows cables are connected
       window.dispatchEvent(new CustomEvent('cablesConnected'));
@@ -845,7 +852,7 @@ const Vinyl = (() => {
         var tip = { ex: pts.djL.x, ey: pts.djL.y };
         var csx = pts.provider.x, csy = pts.provider.y, cex = pts.djL.x, cey = pts.djL.y;
         disconnectTween = gsap.to(tip, {
-          ex: pts.djL.x - 40, ey: pts.djL.y + 120,
+          ex: pts.djL.x + leftTipOffset().dx, ey: pts.djL.y + leftTipOffset().dy,
           duration: 0.4,
           ease: 'power2.out',
           onUpdate: function () {
@@ -883,7 +890,8 @@ const Vinyl = (() => {
       if (cableEl) cableEl.classList.remove('disconnected');
 
       if (which === 'left') {
-        var tip = { ex: pts.djL.x - 40, ey: pts.djL.y + 120 };
+        var lOff = leftTipOffset();
+        var tip = { ex: pts.djL.x + lOff.dx, ey: pts.djL.y + lOff.dy };
         var csx = pts.provider.x, csy = pts.provider.y, cex = pts.djL.x, cey = pts.djL.y;
         disconnectTween = gsap.to(tip, {
           ex: pts.djL.x, ey: pts.djL.y,

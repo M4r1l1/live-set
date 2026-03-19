@@ -9,16 +9,14 @@
   let currentAlbumIdx = 0;
   let isTransitioning = false;
 
-  function getDJNameLeft(wordCount) {
-    const isQHD = window.innerWidth >= 2560;
-    const isTinyMobile = window.innerWidth <= 360;
-    const isSmallMobile = window.innerWidth <= 430;
-    const isMobile = window.innerWidth <= 576;
-    if (isTinyMobile) return '-12%';
-    if (isSmallMobile) return '0';
-    if (isMobile) return '8%';
-    if (wordCount === 1) return isQHD ? '31%' : '20%';
-    return isQHD ? '31%' : '20%';
+
+  function positionDjInfoArrow() {
+    const nameEl = document.getElementById('footer-dj-name');
+    const arrow = document.querySelector('.dj-info__arrow');
+    if (!nameEl || !arrow) return;
+    const nameRect = nameEl.getBoundingClientRect();
+    const parentRect = nameEl.closest('.dj-info').getBoundingClientRect();
+    arrow.style.left = (nameRect.left - parentRect.left + nameRect.width) + 'px';
   }
 
   const splash = document.getElementById('splash');
@@ -32,6 +30,7 @@
     setDate();
     enterBtn.addEventListener('click', enterSet);
     if (listenBtn) listenBtn.addEventListener('click', changeDJ);
+    window.addEventListener('resize', positionDjInfoArrow);
   }
 
   function setDate() {
@@ -85,12 +84,6 @@
     // DJ name + dynamic position
     const nameEl = document.getElementById('dj-name');
     if (nameEl) nameEl.textContent = dj.name;
-    const djNameArea = document.getElementById('dj-name-area');
-    if (djNameArea) {
-      const wordCount = dj.name.trim().split(/\s+/).length;
-      djNameArea.style.left = getDJNameLeft(wordCount);
-    }
-
     // Genres
     const genresEl = document.getElementById('dj-genres');
     if (genresEl) {
@@ -104,6 +97,7 @@
     if (footerName) footerName.textContent = dj.name;
     const footerGenre = document.getElementById('footer-dj-genre');
     if (footerGenre) footerGenre.textContent = dj.genres[0] || '';
+    positionDjInfoArrow();
 
     // Illustration + break state for current track (no crossfade — DJ transition handles fade)
     const illustration = document.getElementById('dj-illustration');
@@ -112,13 +106,9 @@
       // Current track is a mix — show break UI immediately
       inBreak = true;
       const mixDjName = currentTrack.mixDj || currentTrack.title;
-      if (illustration) illustration.src = 'assets/animation/asian-dj.webm';
+      if (illustration) illustration.src = animSrc('assets/animation/asian-dj.webm');
       if (nameEl) nameEl.textContent = mixDjName;
       if (footerName) footerName.textContent = mixDjName;
-      if (djNameArea) {
-        const wordCount = mixDjName.trim().split(/\s+/).length;
-        djNameArea.style.left = getDJNameLeft(wordCount);
-      }
       // Replace genre tags with break info
       if (genresEl) {
         genresEl.innerHTML =
@@ -239,10 +229,6 @@
           const djName = album.mixDj || album.title;
           if (nameEl) nameEl.textContent = djName;
           if (footerName) footerName.textContent = djName;
-          if (djNameArea) {
-            const wordCount = djName.trim().split(/\s+/).length;
-            djNameArea.style.left = getDJNameLeft(wordCount);
-          }
           if (genresEl) {
             genresEl.innerHTML =
               '<span class="genre-area__tag">Break of dj</span>' +
@@ -251,10 +237,6 @@
         } else {
           if (nameEl) nameEl.textContent = currentDJ.name;
           if (footerName) footerName.textContent = currentDJ.name;
-          if (djNameArea) {
-            const wordCount = currentDJ.name.trim().split(/\s+/).length;
-            djNameArea.style.left = getDJNameLeft(wordCount);
-          }
           if (genresEl) {
             genresEl.innerHTML = currentDJ.genres
               .map((g) => '<span class="genre-area__tag">' + g + '</span>')
@@ -263,6 +245,7 @@
         }
         gsap.set(djNameArea, { x: 0 });
         gsap.set('.genre-area', { x: 0 });
+        positionDjInfoArrow();
       });
 
       // Fade back in
@@ -277,7 +260,7 @@
 
       // Crossfade illustration
       if (isMix) {
-        crossfadeIllustration('assets/animation/asian-dj.webm');
+        crossfadeIllustration(animSrc('assets/animation/asian-dj.webm'));
         inBreak = true;
       } else {
         crossfadeIllustration(currentDJ.illustration);
@@ -288,10 +271,6 @@
       const djName = album.mixDj || album.title;
       if (nameEl) nameEl.textContent = djName;
       if (footerName) footerName.textContent = djName;
-      if (djNameArea) {
-        const wordCount = djName.trim().split(/\s+/).length;
-        djNameArea.style.left = getDJNameLeft(wordCount);
-      }
     }
   }
 

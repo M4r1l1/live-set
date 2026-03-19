@@ -265,19 +265,20 @@ body {
   transform: rotate(-2deg);
 }
 
-/* ---- Playlist Button (inside main) ---- */
-.main .btn--orange {
+/* ---- Change DJ Button (inside dj-zone) ---- */
+.dj-zone .btn--orange {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 71.5%;
+  bottom: 13%;
+  z-index: 2;
 }
 
-.main .btn--orange:hover {
+.dj-zone .btn--orange:hover {
   transform: translateX(-50%) scale(1.08);
 }
 
-.main .btn--orange:active {
+.dj-zone .btn--orange:active {
   transform: translateX(-50%) scale(0.95);
 }
 
@@ -426,8 +427,19 @@ body {
   animation: spin 2s linear infinite;
 }
 
-/* Effect knob — vinyl brake button */
+#box_hit {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+#control_volume {
+  cursor: grab;
+  pointer-events: all;
+}
+
 #effect {
+  pointer-events: all;
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
@@ -779,36 +791,79 @@ body {
   display: none !important;
 }
 
+#debug-next {
+  display: none;
+}
+
+/* SoundCloud hidden iframes */
+#sc-widget-a,
+#sc-widget-b {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0;
+  overflow: hidden;
+}
+
 /* =============================================
    Controls — bottom right (mute + next)
    ============================================= */
 .debug-controls {
-  position: fixed;
-  bottom: 20px;
-  right: 204px;
-  transform: translateX(50%);
+  position: absolute;
+  bottom: 1%;
+  left: 156px;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 8px;
-  z-index: 9999;
+  z-index: 26;
   overflow: visible;
+}
+
+/* =============================================
+   RESPONSIVE — 1440×900 (Laptop large)
+   ============================================= */
+@media (min-width: 1441px) {
+  .dj-name-area {
+    left: 25%;
+  }
+  .genre-area {
+    right: 24%;
+  }
+  .date {
+    left: 36%;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — 1920×1080 (Full HD)
+   ============================================= */
+@media (min-width: 1921px) {
+  .dj-name-area {
+    left: 26%;
+    top: 40%;
+  }
+  .genre-area {
+    right: 28%;
+  }
+  .date {
+    left: 38%;
+  }
 }
 
 /* =============================================
    RESPONSIVE — 2560×1440 (QHD / 2K)
    ============================================= */
 @media (min-width: 2560px) {
-  .date {
-    left: 40%;
-  }
   .dj-name-area {
+    left: 30%;
     top: 38%;
   }
   .genre-area {
     right: 33%;
   }
-  .main .btn--orange {
-    top: 63%;
+  .date {
+    left: 40%;
   }
 }
 
@@ -889,6 +944,9 @@ body {
    RESPONSIVE — 1024×768 (Tablet landscape)
    ============================================= */
 @media (max-width: 1024px) {
+  .dj-name-area {
+    left: 22%;
+  }
   .album-stack__card {
     width: 250px;
     height: 250px;
@@ -928,12 +986,34 @@ body {
   .genre-area {
     right: 14%;
   }
-  .main .btn--orange {
-    top: 65%;
-  }
   .debug-controls {
-    right: 159px;
+    left: 125px;
   }
+}
+
+/* =============================================
+   RESPONSIVE — 912×1368 (Surface Pro 7)
+   ============================================= */
+@media (max-width: 912px) {
+  .provider-link {
+    top: 54px;
+  }
+  .dj-name-area {
+    left: 16%;
+    top: 30%;
+  }
+  .genre-area {
+    right: 8%;
+  }
+  .footer-link {
+    display: none;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — 834×1194 (iPad Air / iPad Pro 11")
+   ============================================= */
+@media (max-width: 834px) {
 }
 
 /* =============================================
@@ -949,21 +1029,31 @@ body {
   }
   .genre-area {
     right: 6%;
+    top: 22%;
   }
   .dj-name-area {
     left: 16%;
     top: 74%;
   }
-  .main .btn--orange {
-    top: 57%;
-  }
-  .footer-link {
-    display: none;
+  .debug-controls {
+    left: 50%;
   }
 }
 
 /* --- Phablets / large phones landscape (576px) --- */
 @media (max-width: 576px) {
+  body {
+    margin-bottom: 40px;
+  }
+  .main {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+  }
+  .main.visible {
+    display: flex;
+  }
   .logo__text {
     width: 266px;
     height: 42px;
@@ -975,15 +1065,9 @@ body {
   .provider-link {
     top: 50px;
   }
-  .dj-info__text {
-    display: none;
-  }
-  .dj-info__arrow {
-    display: none;
-  }
   .genre-area {
     right: 1%;
-    top: 18%;
+    top: 160px;
   }
   .genre-area__tag {
     font-size: 30px;
@@ -994,14 +1078,29 @@ body {
   .genre-area__tag:nth-child(3) {
     top: 60px;
   }
-  .main .btn--orange {
-    top: 53%;
+  .dj-name-area {
+    top: 240px;
+  }
+  .dj-zone {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    flex-shrink: 0;
+  }
+  .playback-zone {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    top: auto;
+    transform: none;
+    flex-shrink: 0;
+    margin-top: 0;
+    height: 360px;
   }
   .playback-zone__behind {
     top: 15px;
-  }
-  .dj-zone {
-    top: 18%;
   }
   .date {
     left: 50%;
@@ -1012,11 +1111,33 @@ body {
 
 /* --- iPhone 14 Pro Max, 15 Plus (430×932) --- */
 @media (max-width: 430px) {
+  .dj-info {
+    display: none;
+  }
+  .debug-controls {
+    bottom: -16%;
+  }
   .main {
     width: 100%;
   }
   .provider-link {
     left: -90px;
+  }
+  .splash {
+    gap: 20px;
+  }
+  .splash__nicehub {
+    width: 232px;
+    height: 36px;
+  }
+  .splash__liveset-wrap {
+    width: 64px;
+    height: 43px;
+  }
+  .btn--black,
+  .btn--orange {
+    width: 94px;
+    height: 39px;
   }
   .dj-zone {
     width: 400px;
@@ -1034,8 +1155,8 @@ body {
     height: 34px;
   }
   .dj-name-area {
-    left: 0;
-    top: 26%;
+    left: -10%;
+    top: 240px;
   }
   .dj-name-area__label {
     font-size: 40px;
@@ -1044,7 +1165,8 @@ body {
     font-size: 40px;
   }
   .genre-area {
-    right: 3%;
+    right: -6%;
+    top: 150px;
     width: auto;
     height: auto;
     display: flex;
@@ -1073,31 +1195,41 @@ body {
     font-size: 26px;
     top: 80px;
   }
-  .main .btn--orange {
-    top: 50%;
-  }
   .playback-zone {
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
     width: 260px;
     height: 290px;
-    bottom: auto;
-    top: 60%;
-  }
-  .debug-controls {
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 35px;
   }
 }
 
 /* --- iPhone 14, 15 (390×844) --- */
 @media (max-width: 390px) {
+  .dj-name-area {
+    left: -10%;
+    top: 240px;
+  }
+  .splash {
+    gap: 20px;
+  }
+  .splash__nicehub {
+    width: 232px;
+    height: 36px;
+  }
+  .splash__liveset-wrap {
+    width: 64px;
+    height: 43px;
+  }
+  .btn--black,
+  .btn--orange {
+    width: 94px;
+    height: 39px;
+  }
 }
 
 /* --- Galaxy S21, small Android (360×800) --- */
 @media (max-width: 360px) {
+  .dj-name-area {
+    top: 240px;
+  }
   .album-stack {
     top: -120px;
     right: -120px;
@@ -1107,7 +1239,7 @@ body {
     height: 180px;
   }
   .dj-name-area {
-    left: -12%;
+    left: -10%;
   }
   .dj-name-area__label {
     font-size: 36px;
@@ -1137,14 +1269,5 @@ body {
   .btn--orange {
     width: 94px;
     height: 39px;
-  }
-  .main .btn--orange {
-    top: 48%;
-  }
-  .debug-controls {
-    bottom: 15px;
-  }
-  .playback-zone {
-    top: 55%;
   }
 }
