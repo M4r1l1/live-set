@@ -1,7 +1,7 @@
 .claude/
 memory/
 .DS_Store
-assets/animation/*.mov
+assets/animation/*-original.mov
 assets/animation/*.prin
 assets/animation/*.prproj
 test-tracks.html
