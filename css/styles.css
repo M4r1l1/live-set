@@ -1020,8 +1020,7 @@ body {
    RESPONSIVE — 768×1024 (Tablet portrait)
    ============================================= */
 @media (max-width: 768px) {
-  .playback-zone__cover,
-  .playback-zone__behind {
+  .playback-zone__cover {
     pointer-events: none;
   }
   .provider-link {

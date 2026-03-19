@@ -265,6 +265,8 @@ const Player = (() => {
       hide_related: true,
       visual: false,
       callback: function () {
+        // Force play on mobile Safari/iOS where auto_play may be blocked
+        if (window.innerWidth <= 912) w.play();
         w.setVolume(muted ? 0 : volume);
 
         if (seekMs > 0) {
