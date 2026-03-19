@@ -50,6 +50,18 @@
     playPop();
     // Unlock audio on Safari/iOS — must happen during direct user gesture
     if (typeof Player !== 'undefined' && Player.unlockAudio) Player.unlockAudio();
+    if (typeof Vinyl !== 'undefined' && Vinyl.unlockAudio) Vinyl.unlockAudio();
+    // Pre-start audio muted during user gesture so Safari allows playback
+    Player.init({
+      onTrackEnd: advanceToNextAlbum,
+      onResync: syncToRadio,
+    });
+    const earlyDJ = getCurrentDJ();
+    const earlyAlbums = getDJAlbums(earlyDJ.id);
+    const earlyPos = getRadioPosition(earlyDJ.id);
+    Player.loadQueue(earlyAlbums);
+    Player.setVolume(0);
+    Player.playIndex(earlyPos.index, earlyPos.seekMs);
     gsap.to(splash, {
       opacity: 0,
       duration: 0.5,
@@ -64,11 +76,6 @@
 
   function startLiveSet() {
     Vinyl.init();
-    Player.init({
-      onTrackEnd: advanceToNextAlbum,
-      onResync: syncToRadio,
-    });
-
     const initialDJ = getCurrentDJ();
     currentDJIndex = DJS.indexOf(initialDJ);
     loadDJ(initialDJ, true);
@@ -133,18 +140,18 @@
       Vinyl.renderStack(albums[nextIdx], albums.length > 2 ? albums[nextNextIdx] : null);
     }
 
-    // Load queue for audio
-    Player.loadQueue(albums);
-
     if (isFirstLoad) {
-      // First load — wait for cables to connect before playing
+      // First load — audio already started muted in enterSet()
+      // Wait for cables to connect, then unmute
       window.addEventListener('cablesConnected', function onCables() {
         window.removeEventListener('cablesConnected', onCables);
-        Player.playIndex(currentAlbumIdx, seekMs);
+        Player.setVolume(100);
         Vinyl.startSpin();
         if (currentTrack) Vinyl.setBPM(currentTrack.bpm);
       });
     } else {
+      // Load queue for audio (subsequent DJ switches)
+      Player.loadQueue(albums);
       // Subsequent loads — fade in after loading
       Player.playIndex(currentAlbumIdx, seekMs);
       Player.fadeIn(600);

@@ -1207,5 +1207,19 @@ const Vinyl = (() => {
     if (controlEl) controlEl.style.cursor = 'grab';
   }
 
-  return { init, startSpin, stopSpin, setBPM, stopBounce, renderStack, setCover, dropAlbum, transitionDJ, animateCables, updateCables, isAnimating, toggleCable, isDisconnected: function () { return disconnectedCable; }, initVolumeFader, liftNeedle, dropNeedle, vinylBrake, vinylRelease, toggleBrake };
+  // Unlock audio on Safari/iOS — play all sfx silently during user gesture
+  function unlockAudio() {
+    [plugSfx1, plugSfx2].forEach(function (sfx) {
+      sfx.muted = true;
+      sfx.play().then(function () {
+        sfx.pause();
+        sfx.muted = false;
+        sfx.currentTime = 0;
+      }).catch(function () {
+        sfx.muted = false;
+      });
+    });
+  }
+
+  return { init, startSpin, stopSpin, setBPM, stopBounce, renderStack, setCover, dropAlbum, transitionDJ, animateCables, updateCables, isAnimating, toggleCable, isDisconnected: function () { return disconnectedCable; }, initVolumeFader, liftNeedle, dropNeedle, vinylBrake, vinylRelease, toggleBrake, unlockAudio };
 })();
