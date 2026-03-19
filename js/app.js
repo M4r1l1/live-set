@@ -48,6 +48,8 @@
 
   function enterSet() {
     playPop();
+    // Unlock audio on Safari/iOS — must happen during direct user gesture
+    if (typeof Player !== 'undefined' && Player.unlockAudio) Player.unlockAudio();
     gsap.to(splash, {
       opacity: 0,
       duration: 0.5,

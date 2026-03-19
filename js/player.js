@@ -382,5 +382,23 @@ const Player = (() => {
     }
   }
 
-  return { init, loadQueue, playIndex, toggleMute, setVolume, getVolume, getCurrentItem, getPosition, seekTo, fadeOut, fadeIn };
+  // Unlock audio on Safari/iOS — call during a direct user gesture (click/tap)
+  function unlockAudio() {
+    // Resume AudioContext if suspended
+    if (keepaliveCtx && keepaliveCtx.state === 'suspended') {
+      keepaliveCtx.resume().catch(() => {});
+    }
+    // Create and resume a temporary AudioContext to unlock Web Audio
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const buf = ctx.createBuffer(1, 1, 22050);
+      const src = ctx.createBufferSource();
+      src.buffer = buf;
+      src.connect(ctx.destination);
+      src.start(0);
+      if (ctx.state === 'suspended') ctx.resume().catch(() => {});
+    } catch (e) {}
+  }
+
+  return { init, loadQueue, playIndex, toggleMute, setVolume, getVolume, getCurrentItem, getPosition, seekTo, fadeOut, fadeIn, unlockAudio };
 })();
