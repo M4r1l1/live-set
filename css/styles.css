@@ -90,6 +90,42 @@ body {
   height: 100%;
 }
 
+.splash__note {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: var(--font-hand);
+  font-size: 28px;
+  line-height: 1;
+  color: var(--black);
+  opacity: 0.4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.splash__note-line {
+  display: block;
+}
+
+.splash__note-mark {
+  position: relative;
+  display: inline-block;
+}
+
+.splash__note-scribble {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
 /* Buttons removed — using shared .btn component */
 
 /* =============================================
@@ -821,11 +857,89 @@ body {
 }
 
 /* =============================================
-   RESPONSIVE — 1440×900 (Laptop large)
+   RESPONSIVE — 1281–1540px (Laptop base, MBP 13"/14")
    ============================================= */
-@media (min-width: 1441px) {
+@media (min-width: 1281px) and (max-width: 1540px) {
+  .dj-zone {
+    width: 504px;
+    height: 476px;
+  }
+  .provider-logo {
+    height: 35px;
+  }
+  .logo__text {
+    width: 332px;
+    height: 52px;
+  }
+  .logo__liveset-wrap {
+    width: 92px;
+    height: 62px;
+  }
+  .splash__nicehub {
+    width: 332px;
+    height: 52px;
+  }
+  .splash__liveset-wrap {
+    width: 92px;
+    height: 62px;
+  }
+  .btn--black,
+  .dj-zone .btn--orange {
+    width: 122px;
+    height: 51px;
+  }
+  .btn--black .btn__text,
+  .dj-zone .btn--orange .btn__text {
+    font-size: 43px;
+  }
+  .splash {
+    gap: 32px;
+  }
+  .date {
+    font-size: 40px;
+    top: 100px;
+    left: 40%;
+  }
+  .dj-info__label,
+  .dj-info__name,
+  .dj-info__genre,
+  .footer-link {
+    font-size: 24px;
+  }
+  .dj-name-area__label,
+  .dj-name-area__name {
+    font-size: 60px;
+  }
+  .dj-name-area__name {
+    max-width: 210px;
+  }
+  .genre-area {
+    width: 165px;
+    height: 150px;
+    right: 24%;
+  }
+  .genre-area__tag {
+    font-size: 38px;
+  }
+  .genre-area__tag:nth-child(1) {
+    left: 8px;
+  }
+  .genre-area__tag:nth-child(2) {
+    top: 41px;
+    left: 60px;
+  }
+  .genre-area__tag:nth-child(3) {
+    top: 86px;
+    left: 15px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — 1541px+ (Laptop large)
+   ============================================= */
+@media (min-width: 1541px) {
   .dj-name-area {
-    left: 25%;
+    left: 26%;
   }
   .genre-area {
     right: 24%;
@@ -840,7 +954,7 @@ body {
    ============================================= */
 @media (min-width: 1921px) {
   .dj-name-area {
-    left: 26%;
+    left: 28%;
     top: 40%;
   }
   .genre-area {
@@ -856,7 +970,7 @@ body {
    ============================================= */
 @media (min-width: 2560px) {
   .dj-name-area {
-    left: 30%;
+    left: 32%;
     top: 38%;
   }
   .genre-area {
@@ -1065,8 +1179,11 @@ body {
     top: 50px;
   }
   .genre-area {
-    right: 1%;
+    right: 0;
     top: 160px;
+  }
+  .dj-info {
+    display: none;
   }
   .genre-area__tag {
     font-size: 30px;
@@ -1079,6 +1196,7 @@ body {
   }
   .dj-name-area {
     top: 240px;
+    left: 0;
   }
   .dj-zone {
     position: relative;
@@ -1221,6 +1339,9 @@ body {
   .btn--orange {
     width: 94px;
     height: 39px;
+  }
+  .playback-zone {
+    margin-top: -30px;
   }
 }
 
