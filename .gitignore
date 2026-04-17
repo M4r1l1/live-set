@@ -1,10 +1,4 @@
 .claude/
 memory/
 .DS_Store
-assets/animation/*-original.mov
-assets/animation/*.mp4
-assets/animation/*.prin
-assets/animation/*.prproj
-test-tracks.html
-verify-tracks.html
-DJ_PROFILE_GUIDE.md
+_workspace/
