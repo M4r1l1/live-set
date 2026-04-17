@@ -115,7 +115,7 @@
       // Current track is a mix — show break UI immediately
       inBreak = true;
       const mixDjName = currentTrack.mixDj || currentTrack.title;
-      if (illustration) illustration.src = animSrc('assets/animation/asian-dj.webm');
+      if (illustration) illustration.src = animSrc('assets/animation/general-dj.webm');
       if (nameEl) nameEl.textContent = mixDjName;
       if (footerName) footerName.textContent = mixDjName;
       // Replace genre tags with break info
@@ -269,7 +269,7 @@
 
       // Crossfade illustration
       if (isMix) {
-        crossfadeIllustration(animSrc('assets/animation/asian-dj.webm'));
+        crossfadeIllustration(animSrc('assets/animation/general-dj.webm'));
         inBreak = true;
       } else {
         crossfadeIllustration(currentDJ.illustration);
