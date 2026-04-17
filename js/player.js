@@ -265,8 +265,6 @@ const Player = (() => {
       hide_related: true,
       visual: false,
       callback: function () {
-        // Force play on mobile Safari/iOS where auto_play may be blocked
-        if (window.innerWidth <= 912) w.play();
         w.setVolume(muted ? 0 : volume);
 
         if (seekMs > 0) {
@@ -293,6 +291,10 @@ const Player = (() => {
         });
       },
     });
+
+    // Fire play() synchronously so the user gesture survives into the iframe
+    // (iOS Safari drops activation by the time the async load callback runs).
+    w.play();
   }
 
   function preloadNext() {
