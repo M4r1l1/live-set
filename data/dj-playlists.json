@@ -473,6 +473,830 @@
           "djVerdict": "Orgánico, melódico, para soñar. Esto es lo que pondría cuando el bar se vacía y quedo sola recogiendo con una copa de vino."
         }
       ]
+    },
+    "dj-aida": {
+      "djName": "Aida Mengistu",
+      "channel": "focus",
+      "pool": [
+        {
+          "id": "aida-01",
+          "title": "Africa 45, 3 – Mulatu Astatke - Yegele Tezeta / Yekatit",
+          "artist": "Mr Bongo",
+          "soundcloudUrl": "https://soundcloud.com/mrbongo/sets/africa-45-3-mulatu-astatke-yegele-tezeta-yekatit-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000124006953-b61f6f-t500x500.jpg",
+          "djVerdict": "Mi padre tocaba 'Yegelle Tezeta' en el tocadiscos de Addis. Mr Bongo lo reissue en 7 pulgadas — exactamente el formato en que mi papá los compraba."
+        },
+        {
+          "id": "aida-02",
+          "title": "Tom Misch & Yussef Dayes - Storm Before The Calm (feat. Kaidi Akinnibi)",
+          "artist": "Tom Misch",
+          "soundcloudUrl": "https://soundcloud.com/tommisch/storm-before-the-calm-feat-kaidi-akinnibi",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-CmmVOASZG7kS1UiQ-y3f1Fw-t500x500.jpg",
+          "djVerdict": "La transición perfecta de la lluvia afuera al bar adentro. Yussef es lo que pasaría si mi padre hubiera nacido en Lewisham."
+        },
+        {
+          "id": "aida-03",
+          "title": "Together (Special Edition)",
+          "artist": "Matthew Halsall",
+          "soundcloudUrl": "https://soundcloud.com/matthewhalsall/together",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-d9o5uSUjUY4H-0-t500x500.jpg",
+          "djVerdict": "Matthew Halsall hace en Manchester lo que Alice Coltrane hizo en Detroit — meditación con arpa y aliento. La pongo cuando alguien necesita respirar más despacio."
+        },
+        {
+          "id": "aida-04",
+          "title": "Theon Cross - Brockley (STW Premiere)",
+          "artist": "Stamp The Wax",
+          "soundcloudUrl": "https://soundcloud.com/stampthewax/theon-cross-brockley",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000290043642-e19vx7-t500x500.jpg",
+          "djVerdict": "Theon es el tubista de Sons of Kemet. Solo, deja que la tuba cargue toda la melodía — frecuencia baja, peso africano-británico. La esquina de Brockley a las 3am."
+        },
+        {
+          "id": "aida-05",
+          "title": "Hailu Mergia & Walias Band – Tche Belew",
+          "artist": "Awesome Tapes From Africa",
+          "soundcloudUrl": "https://soundcloud.com/awesometapesfromafrica/hailu-mergia-walias-band-tche-belew",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-DeNaIocr0CAUeLLe-IHzogQ-t500x500.jpg",
+          "djVerdict": "Hailu manejaba un taxi en Washington 30 años antes de que el mundo se acordara de él. Esto suena a aquello: paciencia, lentitud, dignidad."
+        },
+        {
+          "id": "aida-06",
+          "title": "Subtle Movements",
+          "artist": "Surya Botofasina",
+          "soundcloudUrl": "https://soundcloud.com/suryabotofasina-music/subtle-movements",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-SUF1pIbaRVtB-0-t500x500.jpg",
+          "djVerdict": "Surya creció en el ashram de Alice Coltrane. Esto es la siguiente generación del jazz espiritual — ya no necesita explicarse."
+        },
+        {
+          "id": "aida-07",
+          "title": "Red Room",
+          "artist": "Hiatus Kaiyote",
+          "soundcloudUrl": "https://soundcloud.com/hiatus-kaiyote/red-room-2",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-Ymz6Ul9kuXdE-0-t500x500.jpg",
+          "djVerdict": "Naomi canta como si el inglés le quedara chico. Aquí cabe todo: soul, jazz, la voz de mi madre cuando me llamaba para cenar."
+        },
+        {
+          "id": "aida-08",
+          "title": "Mahmoud Ahmed - Aynotché Tèrabu",
+          "artist": "Mr Bongo",
+          "soundcloudUrl": "https://soundcloud.com/mrbongo/mahmoud-ahmed-aynotche-terabu",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000163405411-krctt9-t500x500.jpg",
+          "djVerdict": "Mahmoud es el otro lado de la moneda de Mulatu — la voz cuando Mulatu es solo el vibráfono. Suena a verano amhárico."
+        },
+        {
+          "id": "aida-09",
+          "title": "Mumbay (feat. MC Mawali)",
+          "artist": "Sarathy Korwar",
+          "soundcloudUrl": "https://soundcloud.com/sarathykorwar/mumbay-feat-mc-mawali",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000528835122-2vly3x-t500x500.jpg",
+          "djVerdict": "Sarathy nació en Pune, vive en Londres, mezcla tabla con saxofón. Mi escena exacta — diáspora rítmica."
+        },
+        {
+          "id": "aida-10",
+          "title": "Brown Rice (Live) [feat. Jan Cherry]",
+          "artist": "David Ornette Cherry",
+          "soundcloudUrl": "https://soundcloud.com/davidornettecherry/brown-rice-live-feat-jan",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-KAxSZ98FxcxM-0-t500x500.jpg",
+          "djVerdict": "El hijo de Don Cherry tocando 'Brown Rice' en vivo, con su hermana Jan en voces. Tributo familiar, mismo espíritu, distinta era."
+        },
+        {
+          "id": "aida-11",
+          "title": "Truth - Kamasi Washington",
+          "artist": "Groove with Supreme Flora",
+          "soundcloudUrl": "https://soundcloud.com/user-851514807/truth-kamasi-washington",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-FnLEDEbhUke3nFGK-czNYFA-t500x500.jpg",
+          "djVerdict": "Kamasi escribe para orquestas de iglesia que nunca existieron. Esta es de fan upload, pero el sonido es el mismo: jazz coral, masivo, lleno de fe."
+        },
+        {
+          "id": "aida-12",
+          "title": "Why, Buzzardman, Why",
+          "artist": "Alabaster DePlume",
+          "soundcloudUrl": "https://soundcloud.com/alabasterdeplume/alabaster-deplume-why",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-U8XpT7B7e6i9-0-t500x500.jpg",
+          "djVerdict": "Alabaster toca el saxofón como si lo hubiera encontrado en la calle. Le habla al instrumento. Algo de mi papá había en eso también."
+        },
+        {
+          "id": "aida-13",
+          "title": "Gilles Peterson at The Bowl [Live From We Out Here 2024]",
+          "artist": "We Out Here Festival",
+          "soundcloudUrl": "https://soundcloud.com/weoutherefestival/gilles-peterson-at-the-bowl-live-from-we-out-here-2024",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-Bi8vs8ohhf4bfeW4-Z3Htew-t500x500.jpg",
+          "djVerdict": "Gilles armó la escena en la que vivo. Este set es el mapa de mi cabeza un sábado a las 2am."
+        },
+        {
+          "id": "aida-14",
+          "title": "Mulatu Astatke - Yèkèrmo Sèw (Nicolas Jaar Edit)",
+          "artist": "Uni...Verse",
+          "soundcloudUrl": "https://soundcloud.com/unitedverse/mulatu-astatke-yekermo-sew",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000049574868-6ywc7y-t500x500.jpg",
+          "djVerdict": "Nicolas Jaar tomó 'Yekermo Sew' y le agregó silencio. Mi papá lo habría aprobado — el silencio entre las notas es lo que hace al jazz."
+        },
+        {
+          "id": "aida-15",
+          "title": "The Robert Glasper Experiment LIVE: BOOTLEG RADIO",
+          "artist": "FROLAB",
+          "soundcloudUrl": "https://soundcloud.com/frolab/rcdc-bootleg-radio",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000018899115-cm0a1t-t500x500.jpg",
+          "djVerdict": "Bootleg en vivo de Glasper en Blue Note NYC. La calidad es de celular en bolsillo. Perfecto — eso es escuchar jazz en serio."
+        },
+        {
+          "id": "aida-16",
+          "title": "Where'd You Go",
+          "artist": "Emma-Jean Thackray",
+          "soundcloudUrl": "https://soundcloud.com/emma-jeanthackray/whered-you-go",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-kTcni92l50Ca-0-t500x500.jpg",
+          "djVerdict": "Emma-Jean toca trompeta y dirige una banda al mismo tiempo. Inglesa, joven, cargando la antorcha post-Yussef. Mi generación de la escena."
+        },
+        {
+          "id": "aida-17",
+          "title": "Black Gold | Esperanza Spalding",
+          "artist": "Concord Recorded Music",
+          "soundcloudUrl": "https://soundcloud.com/concordrecordedmusic/black-gold-esperanza-spalding",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000036099713-lxrl5q-t500x500.jpg",
+          "djVerdict": "Esperanza canta para los niños negros que nadie les dijo que podían ser hermosos. La pongo despacio."
+        },
+        {
+          "id": "aida-18",
+          "title": "Idris Ackamoor & The Pyramids - We Be All Africans (Chris Deepak Mix)",
+          "artist": "Strut Records",
+          "soundcloudUrl": "https://soundcloud.com/strut/idris-ackamoor-the-pyramids-we-be-all-africans-chris-deepak-mix-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000189863129-mz91ug-t500x500.jpg",
+          "djVerdict": "Idris Ackamoor lleva 50 años haciendo spiritual jazz panafricano. Esto es el manifiesto: somos todos africanos. Cabe en cualquier set mío."
+        },
+        {
+          "id": "aida-19",
+          "title": "Premiere: Sarathy Korwar - Hajj",
+          "artist": "Música Macondo",
+          "soundcloudUrl": "https://soundcloud.com/musicamacondo/premiere-sarathy-korwar-hajj",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000419676936-29598t-t500x500.jpg",
+          "djVerdict": "Segundo Sarathy en mi set — si Mumbay habla de Bombay, Hajj habla de la peregrinación. Diáspora indo-británica encontrándose con la mía etíope-británica."
+        },
+        {
+          "id": "aida-20",
+          "title": "Empower (feat. Afronaut Zu, TINYMAN & Ahnansé)",
+          "artist": "Steam Down",
+          "soundcloudUrl": "https://soundcloud.com/steamdown/empower-feat-afronaut-zu",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-EnxYJjyiE4cj-0-t500x500.jpg",
+          "djVerdict": "Steam Down es el colectivo de Peckham que está reescribiendo el sur de Londres. Esta track tiene cuatro voces y un solo aliento."
+        },
+        {
+          "id": "aida-21",
+          "title": "Andrew Ashong & Kaidi Tatham - Sankofa Song (STW Premiere)",
+          "artist": "Stamp The Wax",
+          "soundcloudUrl": "https://soundcloud.com/stampthewax/andrew-ashong-kaidi-tatham-sankofa-song-stw-premiere",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-XXYMdfCeOCiI2EJq-D84EOA-t500x500.jpg",
+          "djVerdict": "Sankofa: 'no es tabú regresar y traer lo que dejaste atrás'. Andrew y Kaidi mezclan broken beat con soul. Justamente lo que mi padre haría si estuviera vivo."
+        },
+        {
+          "id": "aida-22",
+          "title": "Black Sands",
+          "artist": "bonobo",
+          "soundcloudUrl": "https://soundcloud.com/bonobo/black-sands",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-JOuDGgCUPel6-0-t500x500.jpg",
+          "djVerdict": "Bonobo no es jazz, pero esta track abre las puertas hacia el jazz. La pongo cuando alguien dice 'no me gusta el jazz'."
+        },
+        {
+          "id": "aida-23",
+          "title": "Album Of The Week: Nala Sinephro - Space 1.8",
+          "artist": "Twistedsoul",
+          "soundcloudUrl": "https://soundcloud.com/twistedsoulmusic/sets/nala-sinephro-space-1-8",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-yO2kbCGzrbhr9PrT-Xzy9nw-t500x500.jpg",
+          "djVerdict": "Nala Sinephro toca arpa y sintetizadores como si fueran el mismo instrumento. Este es el álbum entero curado por Twistedsoul — 30 minutos de respirar."
+        },
+        {
+          "id": "aida-24",
+          "title": "Last Bloom",
+          "artist": "Floating Points",
+          "soundcloudUrl": "https://soundcloud.com/floatingpoints/last-bloom",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-bYqZ2kKcImt7-0-t500x500.jpg",
+          "djVerdict": "Sam (Floating Points) es neurocientífico de día. Esta track suena a sinapsis. La pongo cuando el bar empieza a vaciarse."
+        },
+        {
+          "id": "aida-25",
+          "title": "Imafan",
+          "artist": "Makaya McCraven",
+          "soundcloudUrl": "https://soundcloud.com/makaya-mccraven/imafan",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-JozFZeryBHlA-0-t500x500.jpg",
+          "djVerdict": "Makaya programa a partir de improvisaciones en vivo. International Anthem es mi escuela favorita en este momento. Cierre perfecto antes del amanecer."
+        }
+      ]
+    },
+    "dj-naina": {
+      "djName": "Naina Iyer",
+      "channel": "flow",
+      "pool": [
+        {
+          "id": "naina-01",
+          "title": "Mehbooba Mehbooba, Mehbooba Mehbooba",
+          "artist": "R.D. Burman",
+          "soundcloudUrl": "https://soundcloud.com/rahul-dev-burman/sholay-mehbooba-o-mehbooba",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000090932901-azlddp-t500x500.jpg",
+          "djVerdict": "Mi mamá ponía esto y bailaba en la cocina cuando creía que nadie la veía. Helen tiene 30 segundos de pantalla y se vuelve eterna."
+        },
+        {
+          "id": "naina-02",
+          "title": "Din Raat दिन रात",
+          "artist": "LIFAFA",
+          "soundcloudUrl": "https://soundcloud.com/lifafa/lifafa-din-raat",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000405213909-0qp7ih-t500x500.jpg",
+          "djVerdict": "Suryakant sampled un cassette viejo de un primo suyo. Yo hago lo mismo cada vez que pongo un set — agarro algo de mi mamá y lo paso por encima de un beat."
+        },
+        {
+          "id": "naina-03",
+          "title": "Born To Shine — Diljit Dosanjh",
+          "artist": "ss",
+          "soundcloudUrl": "https://soundcloud.com/sehz-dyalia/born-to-shine-diljit-dosanjh",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-X3ogSUEuD8zROnRH-Q59gUw-t500x500.jpg",
+          "djVerdict": "Diljit es la prueba de que el Punjab puede ser glam sin perder calle. Lo pongo cuando alguien necesita un trago más antes de bailar."
+        },
+        {
+          "id": "naina-04",
+          "title": "Talvin Singh - Traveller (M.O.S. Edit)",
+          "artist": "M.O.S.",
+          "soundcloudUrl": "https://soundcloud.com/mosmusique/talvin-singh-traveller-mos-edit",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-KDe8am5IeRGojUYd-cAOySQ-t500x500.jpg",
+          "djVerdict": "Talvin abrió la puerta antes de que existiera Lifafa. M.O.S. la respeta — solo le sube el bajo un poco. Mismo espíritu, mejor cuerpo."
+        },
+        {
+          "id": "naina-05",
+          "title": "Chaiyya Chaiyya (Kahani Remix)",
+          "artist": "Kahani",
+          "soundcloudUrl": "https://soundcloud.com/kahani/chaiyya-chaiyya-kahani-remix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-JUfOGEGEJIrnPydY-VWYYYA-t500x500.jpg",
+          "djVerdict": "Esta canción la odiaba de niña — sonaba en cada matrimonio. Ahora la pongo a las 11pm en una azotea y todo el mundo, indio o no, sabe la letra."
+        },
+        {
+          "id": "naina-06",
+          "title": "Nicola Cruz - Tzantza (preview) [MC030]",
+          "artist": "Multi Culti",
+          "soundcloudUrl": "https://soundcloud.com/multiculti/nicola-cruz-tzantza-prev-mc030",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000203689930-hmyz1k-t500x500.jpg",
+          "djVerdict": "Nicola me hizo entender que la percusión andina y la india respiran igual. Tierras lejanas con la misma raíz."
+        },
+        {
+          "id": "naina-07",
+          "title": "Nazia Hassan - Disco Deewane",
+          "artist": "Asia Sound Archive",
+          "soundcloudUrl": "https://soundcloud.com/asiasoundarchive/nazia-hassan-disco-deewane",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000141033032-79ixtt-t500x500.jpg",
+          "djVerdict": "Nazia tenía 15 años cuando grabó esto. Pakistaní, el primer disco-pop de la región. Mi mamá lo cantaba en el carro a Bangalore."
+        },
+        {
+          "id": "naina-08",
+          "title": "Running w: Claws",
+          "artist": "Sandunes",
+          "soundcloudUrl": "https://soundcloud.com/sandunes/running-w-claws",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000031783695-csivi8-t500x500.jpg",
+          "djVerdict": "Sanaya es de Bombay como yo. Sus beats tienen la humedad del monzón."
+        },
+        {
+          "id": "naina-09",
+          "title": "Karsh Kale - Distance (Filip Beats Original Mix)",
+          "artist": "Dj Filip Beats Official",
+          "soundcloudUrl": "https://soundcloud.com/djfilipbeats/karsh-kale-distance-filip",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000036427664-cepipn-t500x500.jpg",
+          "djVerdict": "Esta versión la firma Filip Beats, pero la composición es de Karsh — Indian-electronic original. Me la pasaba mi hermano mayor en un CD quemado."
+        },
+        {
+          "id": "naina-10",
+          "title": "Birds | Sid Vashi",
+          "artist": "Azadi Records",
+          "soundcloudUrl": "https://soundcloud.com/azadirecords/birds-sid-vashi",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000345256278-calvc2-t500x500.jpg",
+          "djVerdict": "Sid es de Detroit pero su corazón está en Gurgaon. Esa diáspora suena en cada beat suyo."
+        },
+        {
+          "id": "naina-11",
+          "title": "Panjabi MC - Mundian To Bach Ke (Les Gordon Remix)",
+          "artist": "Les Gordon",
+          "soundcloudUrl": "https://soundcloud.com/lesgordonmusic/panjabi-mc-mundian-to-bach-ke-les-gordon-remix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-aXG9Jtextz0l9NMw-3Yw5AQ-t500x500.jpg",
+          "djVerdict": "Les Gordon, francés electrónico, le bajó el tempo a 'Mundian'. Pero el dholak sigue siendo Punjab — el sample de Knight Rider sigue ahí, solo más lento."
+        },
+        {
+          "id": "naina-12",
+          "title": "Charanjit Singh — Raga Madhuvanti (from \"Synthesizing: Ten Ragas To A Disco Beat\", 1982)",
+          "artist": "groove",
+          "soundcloudUrl": "https://soundcloud.com/grooveto/c1-45rpm-raga-madhuvanti-charanjit-singh-synthesizing-ten-ragas-to-a-disco-beat-1982",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000116319216-fttg0y-t500x500.jpg",
+          "djVerdict": "1982. Charanjit inventó el acid house cinco años antes que Phuture. India ya estaba ahí, solo nadie nos vio."
+        },
+        {
+          "id": "naina-13",
+          "title": "Lifafa Boiler Room BUDx New Delhi DJ Set",
+          "artist": "Boiler Room",
+          "soundcloudUrl": "https://soundcloud.com/platform/lifafa",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000269817587-e3awme-t500x500.jpg",
+          "djVerdict": "Suryakant en una sala chiquita en Delhi. Esto es la escena entera en una hora — yo aprendí a programar viendo este set."
+        },
+        {
+          "id": "naina-14",
+          "title": "Bappi Lahiri ft. S. Janaki - Yaar Bina Chain Kahan Re (dj chestar Remix)",
+          "artist": "dj chestar",
+          "soundcloudUrl": "https://soundcloud.com/richestar-nongsiej/bappi-lahiri-ft-s-janaki-yaar",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000033584470-dc9sg0-t500x500.jpg",
+          "djVerdict": "Bappi era el rey del Bollywood-disco. La voz de S. Janaki encima del sintetizador de los 80s — caramelo dorado."
+        },
+        {
+          "id": "naina-15",
+          "title": "Anish Sood, Ramona Arena - Wanna Be Your Only Love (Snow Flakes & Rishabh Remix)",
+          "artist": "925 Music",
+          "soundcloudUrl": "https://soundcloud.com/925-music/anish-sood-ramona-arena",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000020675681-cxcwyk-t500x500.jpg",
+          "djVerdict": "Anish lleva años en Bombay haciendo el puente entre house y la radio comercial. Esta es de cuando todos lo seguíamos."
+        },
+        {
+          "id": "naina-16",
+          "title": "Nomadic Sky - Karsh Kale, Nitin Sawhney and Natacha Atlas",
+          "artist": "Karsh Kale Official",
+          "soundcloudUrl": "https://soundcloud.com/karshkale/nomadic-sky-karsh-kale-nitin",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000019865015-t49mwb-t500x500.jpg",
+          "djVerdict": "Tres diásporas en una canción. India, Inglaterra, el mundo árabe. Esto suena a una conversación en el aeropuerto."
+        },
+        {
+          "id": "naina-17",
+          "title": "Cheb i Sabbah - Alkher Illa Doffor (Bassnectar Remix 2013)",
+          "artist": "Bassnectar",
+          "soundcloudUrl": "https://soundcloud.com/bassnectar/cheb-i-sabbah-alkher-illa",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000063271290-69778o-t500x500.jpg",
+          "djVerdict": "Cheb era argelino-judío en San Francisco haciendo música devocional india. Bassnectar lo lleva al festival — esa libertad cruzada es la que persigo en cada set."
+        },
+        {
+          "id": "naina-18",
+          "title": "RITVIZ - Udd Gaye",
+          "artist": "RITVIZ",
+          "soundcloudUrl": "https://soundcloud.com/ritviz/ritviz-udd-gaye",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000277682642-w3alt2-t500x500.jpg",
+          "djVerdict": "Ritviz tomó electrónica y le metió un poema en hindi. Lo que se necesitaba para que la gente joven volviera a cantar en su idioma."
+        },
+        {
+          "id": "naina-19",
+          "title": "Subha Hone Na De",
+          "artist": "KingMikaSingh",
+          "soundcloudUrl": "https://soundcloud.com/kingmikasingh/subha-hone-na-de",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000080050508-m5z98e-t500x500.jpg",
+          "djVerdict": "Mika Singh, voz rasgada, baile en discoteca de Mumbai 2011. Cero sutileza, mucho sweat. Me encanta."
+        },
+        {
+          "id": "naina-20",
+          "title": "Dum Maro Dum (Avantika's Three Step Mix) - Asha Bhosle",
+          "artist": "AVANTIKA",
+          "soundcloudUrl": "https://soundcloud.com/avantikabakshi/dum-maro-dum-avantikas-three-step-mix",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-YGeMdgxMRIJc305s-uN3EUQ-t500x500.jpg",
+          "djVerdict": "Asha cantando sobre un beat que no existía en su época. Avantika la transporta sin perderle el respeto."
+        },
+        {
+          "id": "naina-21",
+          "title": "Dhoom Machale",
+          "artist": "JAGM33T",
+          "soundcloudUrl": "https://soundcloud.com/jagm33tmusic/dhoommachale",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-ouDv2lLbB1fkw9WR-zU9mYA-t500x500.jpg",
+          "djVerdict": "Esto sonaba en los autobuses de Mumbai cuando llegué. Pop bombástico, pero la base disco está intacta."
+        },
+        {
+          "id": "naina-22",
+          "title": "The Memory Lamp - Part II",
+          "artist": "Sandunes",
+          "soundcloudUrl": "https://soundcloud.com/sandunes/the-memory-lamp-part-ii",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000092849693-zxa4n1-t500x500.jpg",
+          "djVerdict": "Segunda Sandunes en mi set — 'Memory Lamp' es lo que pasa cuando un track tarda 6 minutos en florecer. Sanaya tomándose tiempo, como en una azotea de Bombay un domingo."
+        },
+        {
+          "id": "naina-23",
+          "title": "Kohra - Indu",
+          "artist": "Qilla Records",
+          "soundcloudUrl": "https://soundcloud.com/qilla/kohra-indu-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-btwcjYxy091yuZEa-T7QLPg-t500x500.jpg",
+          "djVerdict": "Kohra hace techno con raga sin pretensión. 'Indu' tiene la melodía que mi tía cantaba mientras cocinaba."
+        },
+        {
+          "id": "naina-24",
+          "title": "III. TRANSMISSION",
+          "artist": "Sid Vashi",
+          "soundcloudUrl": "https://soundcloud.com/sidvashi/iii-transmission",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000222776361-vlqplj-t500x500.jpg",
+          "djVerdict": "El segundo Sid Vashi en mi set — no me importa, su catálogo es mi cultura."
+        },
+        {
+          "id": "naina-25",
+          "title": "Pasoori - Ali Sethi X Shae Gill Coke Studio Season 14",
+          "artist": "BBA THOUGHT$ Music",
+          "soundcloudUrl": "https://soundcloud.com/musicaroke/pasoori-ali-sethi-x-shae-gill-coke-studio-season-14",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-JJEhX3kBWLa9YW8k-18SyZw-t500x500.jpg",
+          "djVerdict": "Pakistán e India peleando políticamente, cantando juntas. Esto es Coke Studio en su mejor versión — punjabi, sufi, queer, todo."
+        }
+      ]
+    },
+    "dj-mariana": {
+      "djName": "Mariana Lozano",
+      "channel": "move",
+      "pool": [
+        {
+          "id": "mariana-01",
+          "title": "Eres",
+          "artist": "Café Tacvba",
+          "soundcloudUrl": "https://soundcloud.com/cafe-tacvba/eres-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-zdgqj281rqdF-0-t500x500.jpg",
+          "djVerdict": "Esta canción la escuché en cassette en el carro de mi papá. Café Tacvba es la primera banda mexicana que me hizo sentir orgullosa de no escuchar pop gringo."
+        },
+        {
+          "id": "mariana-02",
+          "title": "Mr. P. Mosh",
+          "artist": "Plastilina Mosh",
+          "soundcloudUrl": "https://soundcloud.com/plastilina-mosh/mr-p-mosh-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-n0vLZbfmshgs-0-t500x500.jpg",
+          "djVerdict": "Plastilina Mosh eran los tipos raros del rock mexicano. Mi hermano me los mostró. 'Mr. P. Mosh' es funk, es rap, es un grito de Monterrey."
+        },
+        {
+          "id": "mariana-03",
+          "title": "La Negra Tomasa (Tema Remasterizado)",
+          "artist": "Caifanes",
+          "soundcloudUrl": "https://soundcloud.com/caifanesofficial/la-negra-tomasa-tema",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-JVCIHrxPa68F-0-t500x500.jpg",
+          "djVerdict": "Saúl Hernández tomó una cumbia cubana y la convirtió en rock alternativo en español. La pongo cuando quiero recordar que México y Cuba son hermanas."
+        },
+        {
+          "id": "mariana-04",
+          "title": "De Música Ligera",
+          "artist": "Soda Stereo",
+          "soundcloudUrl": "https://soundcloud.com/sodastereoofficial/de-m-sica-ligera-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-B3f6KcleB67z-0-t500x500.jpg",
+          "djVerdict": "Argentina, no México, pero todos crecimos cantando esto. Cerati murió y un país entero lloró."
+        },
+        {
+          "id": "mariana-05",
+          "title": "Soy Yo",
+          "artist": "Bomba Estéreo",
+          "soundcloudUrl": "https://soundcloud.com/bombaestereo/soy-yo",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-XQffaCmtJlEj-0-t500x500.jpg",
+          "djVerdict": "Bomba abrió la puerta para que las bandas latinas no tuvieran que cantar en inglés para sonar global. 'Soy Yo' es ese manifiesto."
+        },
+        {
+          "id": "mariana-06",
+          "title": "Mío",
+          "artist": "Buscabulla",
+          "soundcloudUrl": "https://soundcloud.com/buscabulla/mio-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-ad8LwszAaAt8-0-t500x500.jpg",
+          "djVerdict": "Raquel Berrios canta como si tuviera la garganta llena de azúcar morena. Buscabulla es Puerto Rico psicodélico, exactamente lo que necesito a las 7pm."
+        },
+        {
+          "id": "mariana-07",
+          "title": "Outside the Outside",
+          "artist": "Helado Negro",
+          "soundcloudUrl": "https://soundcloud.com/heladonegro/outside-the-outside",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-QKgowNN8GkuA-0-t500x500.jpg",
+          "djVerdict": "Roberto Carlos Lange me hizo entender que ser latino en EEUU también es ser latino. Su voz suena a 4am y café cargado."
+        },
+        {
+          "id": "mariana-08",
+          "title": "Nada (feat. Li Saumet)",
+          "artist": "Lido Pimienta",
+          "soundcloudUrl": "https://soundcloud.com/lido-pimienta/nada-feat-li-saumet",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-qc5FrbZcgT32-0-t500x500.jpg",
+          "djVerdict": "Lido es la furia colombiana — Mercury Prize ganado, premios devueltos. Esta track con Li Saumet son las dos colombianas más bravas en una canción."
+        },
+        {
+          "id": "mariana-09",
+          "title": "Pum Pum",
+          "artist": "Sotomayor",
+          "soundcloudUrl": "https://soundcloud.com/sotomayor-music/pum-pum",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000109749432-gxpe2f-t500x500.jpg",
+          "djVerdict": "Pamela y Raúl son hermanos. Hacen cumbia electrónica en CDMX. 'Pum Pum' es lo que pongo cuando necesito que los amigos suelten el celular y bailen."
+        },
+        {
+          "id": "mariana-10",
+          "title": "they told us it was hard, but they were wrong.",
+          "artist": "Ela Minus",
+          "soundcloudUrl": "https://soundcloud.com/elaminus/they-told-us-it-was-hard-but-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-glQkGYn3gYKB-0-t500x500.jpg",
+          "djVerdict": "Gabriela es de Bogotá, vive en Brooklyn. Esta track es synthpop con título de 7 palabras. La pongo justo antes de salir del bar."
+        },
+        {
+          "id": "mariana-11",
+          "title": "Mexican Institute of Sound - ES-TOY (Atropolis RMX)",
+          "artist": "Atropolis",
+          "soundcloudUrl": "https://soundcloud.com/atropolis/mexican-institute-of-sound-es",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000030560405-m5jxzx-t500x500.jpg",
+          "djVerdict": "Camilo Lara hizo Es-toy en una computadora vieja en Polanco. Atropolis le metió percusión nueva. La versión remix late más."
+        },
+        {
+          "id": "mariana-12",
+          "title": "Más",
+          "artist": "KINKY",
+          "soundcloudUrl": "https://soundcloud.com/kinky-5/m-s",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000006994053-ukbo4d-t500x500.jpg",
+          "djVerdict": "Monterrey, electrónica, rock. Kinky era la primera banda mexicana que escuché en MTV gringo. Ese 'más' es a las 11pm con cervezas en la mano."
+        },
+        {
+          "id": "mariana-13",
+          "title": "Mexican Institute of Sound Boiler Room x Budweiser Los Angeles DJ Set",
+          "artist": "Boiler Room",
+          "soundcloudUrl": "https://soundcloud.com/platform/mexican-institute-of-sound",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000217136131-q3u21q-t500x500.jpg",
+          "djVerdict": "Camilo armando el set en Los Ángeles. Esto es la diáspora chicana: cumbia, electrónica, rock alternativo, todo en un mismo lenguaje."
+        },
+        {
+          "id": "mariana-14",
+          "title": "Tijuana Sound Machine",
+          "artist": "Nortec Collective Presents: Bostich + Fussible",
+          "soundcloudUrl": "https://soundcloud.com/norteccollectivepresentsbostichfussible/tijuana-sound-machine",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-WPPUr102tECP-0-t500x500.jpg",
+          "djVerdict": "Soy de Tijuana. Esta track es mi ciudad: bandas norteñas + IDM, fronteriza, sin disculpas. La pongo y me da nostalgia."
+        },
+        {
+          "id": "mariana-15",
+          "title": "Universo 2",
+          "artist": "Hello Seahorse!",
+          "soundcloudUrl": "https://soundcloud.com/hello-seahorse/universo-2-2",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-031C4Fkdxk85-0-t500x500.jpg",
+          "djVerdict": "Lo Blondo canta como si hablara desde otra dimensión. Hello Seahorse! es indie chilango — mi escena diaria."
+        },
+        {
+          "id": "mariana-16",
+          "title": "Al Templo",
+          "artist": "Combo Chimbita",
+          "soundcloudUrl": "https://soundcloud.com/combo-chimbita/al-templo",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-GLUJoGQOIBV5-0-t500x500.jpg",
+          "djVerdict": "Combo Chimbita es Brooklyn-Caribe psicodélico. Carolina Oliveros canta para los espíritus. Tropical doom — rara categoría, perfecta."
+        },
+        {
+          "id": "mariana-17",
+          "title": "Y La Bamba - Mujeres",
+          "artist": "Tender Loving Empire",
+          "soundcloudUrl": "https://soundcloud.com/tenderlovingempire/y-la-bamba-mujeres",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000372932313-g87j7o-t500x500.jpg",
+          "djVerdict": "Luz Elena Mendoza Ramos es chicana de Portland. Esta canción es para todas las mujeres que cargaron a alguien en la espalda."
+        },
+        {
+          "id": "mariana-18",
+          "title": "Bomba Esterio & Manu Chao - Me Duele (Gus Gudno Edit)",
+          "artist": "Gus Gudno",
+          "soundcloudUrl": "https://soundcloud.com/gus-gudno/bomba-esterio-manu-chao-me-duele-gus-gudno-edit",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-Gg74gKnWkXmPzP2g-Wh86BA-t500x500.jpg",
+          "djVerdict": "Manu Chao mezclado con Li Saumet — dos generaciones del manifiesto musical latino. Gus Gudno solo respeta y no estorba."
+        },
+        {
+          "id": "mariana-19",
+          "title": "Tu Falta De Querer",
+          "artist": "monlaferte",
+          "soundcloudUrl": "https://soundcloud.com/monlaferte/tu-falta-de-querer",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-hrQMdHEiGW5e-0-t500x500.jpg",
+          "djVerdict": "Mon es chilena, pero canta en Veracruz como si hubiera nacido ahí. 'Tu Falta De Querer' es el bolero que mi mamá nunca pudo decirle a su ex."
+        },
+        {
+          "id": "mariana-20",
+          "title": "Natalia Lafourcade — Hasta La Raíz",
+          "artist": "Bécquer Bendezú",
+          "soundcloudUrl": "https://soundcloud.com/universitario2015/natalia-lafourcade-hasta-la-raiz-15",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000137145515-m9t5yr-t500x500.jpg",
+          "djVerdict": "Natalia volvió a la música mexicana de raíz cuando todos volábamos al pop gringo. Esta es la respuesta orgullosa."
+        },
+        {
+          "id": "mariana-21",
+          "title": "Convéncete",
+          "artist": "PRINCESA ALBA",
+          "soundcloudUrl": "https://soundcloud.com/princesa-alba/conve-ncete",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-H79FuMp1UhXN-0-t500x500.jpg",
+          "djVerdict": "Trinidad Riveros, chilena, generación Z. 'Convéncete' es pop mañanero pero con tristeza adentro. La pongo y todos cantan sin saber por qué."
+        },
+        {
+          "id": "mariana-22",
+          "title": "Eres Tú",
+          "artist": "Carla Morrison",
+          "soundcloudUrl": "https://soundcloud.com/carla-morrison-official/eres-tu",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-zZdBa40Ojp5D-0-t500x500.jpg",
+          "djVerdict": "Carla canta para los corazones rotos sin pedir permiso. Tecate me dio su voz primero — orgullo fronterizo."
+        },
+        {
+          "id": "mariana-23",
+          "title": "1977",
+          "artist": "Ana Tijoux",
+          "soundcloudUrl": "https://soundcloud.com/ana-tijoux-official/1977-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-TNYVhqM6zynS-0-t500x500.jpg",
+          "djVerdict": "Ana Tijoux es chilena-francesa, rapeando en español sobre el año en que nació. Madurez política con flow. Lo que necesitamos siempre."
+        },
+        {
+          "id": "mariana-24",
+          "title": "Gimme Tha Power",
+          "artist": "Molotov",
+          "soundcloudUrl": "https://soundcloud.com/molotov-official/gimme-tha-power",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-goPCDx5TM2YQ-0-t500x500.jpg",
+          "djVerdict": "Molotov gritándole al PRI desde 1997. Spanglish, rap-rock, irreverente. La pongo cuando estoy enojada con la política mexicana — o sea, todo el tiempo."
+        },
+        {
+          "id": "mariana-25",
+          "title": "Young Latin And Proud",
+          "artist": "Helado Negro",
+          "soundcloudUrl": "https://soundcloud.com/heladonegro/young-latin-and-proud",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000121748403-rfxngm-t500x500.jpg",
+          "djVerdict": "El himno: joven, latino, orgulloso. Roberto repite la frase hasta que se vuelve verdad. Cierre perfecto antes del último mezcal."
+        }
+      ]
+    },
+    "dj-tati": {
+      "djName": "Tati Almeida",
+      "channel": "intensity",
+      "pool": [
+        {
+          "id": "tati-01",
+          "title": "MONTAGEM DA XERECA (Funk Rave Colapso 160 BPM)",
+          "artist": "BADSISTA",
+          "soundcloudUrl": "https://soundcloud.com/badsista/montagem-da-xereca-funk-rave-colapso-160-bpm",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000504153027-2bpw36-t500x500.jpg",
+          "djVerdict": "BADSISTA es mi referente. Cuando me llevó a Berghain a los 22, vi que el funk paulistano podía bailarlo cualquiera. 160 BPM sin disculpas."
+        },
+        {
+          "id": "tati-02",
+          "title": "MC Carol - Não foi Cabral",
+          "artist": "Heavy Baile",
+          "soundcloudUrl": "https://soundcloud.com/heavybaile/mc-carol-nao-foi-cabral",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000122109214-9sv7ah-t500x500.jpg",
+          "djVerdict": "Carol grita la historia de Brasil que no nos enseñaron en la escuela. 'No fue Cabral quien descubrió Brasil' — ya, decílo más fuerte."
+        },
+        {
+          "id": "tati-03",
+          "title": "CASHU // MAMBA NEGRA 3 ANOS // BODAS DE COURO",
+          "artist": "Cashu",
+          "soundcloudUrl": "https://soundcloud.com/carol-schutzer/cashu-mamba-negra-3-anos-bodas-de-couro",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000167750523-fi3dlj-t500x500.jpg",
+          "djVerdict": "Cashu fundó Mamba Negra. Sin ese colectivo, no existe el techno paulistano. Este set es el aniversario — me lo aprendí entero a los 18."
+        },
+        {
+          "id": "tati-04",
+          "title": "Anitta, Mc Zaac, Maejor ft. Tropkillaz & DJ Yuri Martins - Vai Malandra",
+          "artist": "RWFuckyou",
+          "soundcloudUrl": "https://soundcloud.com/user-380689117/anitta-mc-zaac-maejor-ft-tropkillaz-dj-yuri-martins-vai-malandra-audio-official",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000271648592-imjlkn-t500x500.jpg",
+          "djVerdict": "Anitta es la prueba de que pop comercial y funk de favela pueden ser la misma cosa. 'Vai Malandra' es el reggaeton-funk del Vidigal directo a Spotify."
+        },
+        {
+          "id": "tati-05",
+          "title": "Bololo Haha",
+          "artist": "MC Bin Laden",
+          "soundcloudUrl": "https://soundcloud.com/mcbinladenofficial/bololo-haha",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-ZOL4tW8jPLuL-0-t500x500.jpg",
+          "djVerdict": "Bin Laden hace funk ostentação — el subgénero de plata-y-mujeres. Esto suena a Lamborghini falso en Capão. Ridículo y perfecto."
+        },
+        {
+          "id": "tati-06",
+          "title": "Pininga - Duka, O Cyborg",
+          "artist": "Chico Dub",
+          "soundcloudUrl": "https://soundcloud.com/chicodub/pininga-duka-o-cyborg",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000133346584-zae10l-t500x500.jpg",
+          "djVerdict": "Pininga es cyborg, queer, paulistana. Si baile funk e industrial alemán tuvieran un hijo, sonaría a esto."
+        },
+        {
+          "id": "tati-07",
+          "title": "TETO PRETO - GASOLINA",
+          "artist": "MAMBA NEGRA",
+          "soundcloudUrl": "https://soundcloud.com/mamba_negra/teto-preto-gasolina",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000178853923-v64cmk-t500x500.jpg",
+          "djVerdict": "Teto Preto + Mamba Negra = mi pubertad. Carneosso al frente cantando 'Gasolina'. Quemen todo lo que no sea queer."
+        },
+        {
+          "id": "tati-08",
+          "title": "LYZZA - La Unica",
+          "artist": "SYMBOLS",
+          "soundcloudUrl": "https://soundcloud.com/symbols/lyzza-la-unica-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000258935183-lwrzug-t500x500.jpg",
+          "djVerdict": "LYZZA es brasileña en Países Bajos. 'La Unica' está en español pero el beat es paulistano-techno. Diáspora bailando juntas."
+        },
+        {
+          "id": "tati-09",
+          "title": "RÁDIO VÍRUSSS #045 — Angela Carneosso e a Peste",
+          "artist": "MAMBA NEGRA",
+          "soundcloudUrl": "https://soundcloud.com/mamba_negra/virusss_45_angela-carneosso",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000189837211-crp62q-t500x500.jpg",
+          "djVerdict": "Carneosso es la voz de Teto Preto en formato radio set. Una hora de Mamba Negra en bruto. Lo que pongo cuando el bar empieza a cerrar."
+        },
+        {
+          "id": "tati-10",
+          "title": "BRUXARIA ESPANTA BOY",
+          "artist": "DJ K",
+          "soundcloudUrl": "https://soundcloud.com/djk81280/bruxaria-espanta-boy",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-2zxXbULbuktm-0-t500x500.jpg",
+          "djVerdict": "DJ K inventó la bruxaria — funk con sirenas, frecuencia satánica. 'Espanta Boy' es exactamente eso: literal."
+        },
+        {
+          "id": "tati-11",
+          "title": "Botano (Útero Baixo) - Dancehall (Remix) [feat. Scof Savage & Fire Woody]",
+          "artist": "Dj Caio Prince",
+          "soundcloudUrl": "https://soundcloud.com/djcaioprince-sc/botano-utero-baixo-dancehall",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-hrkDhEEZoqgt-0-t500x500.jpg",
+          "djVerdict": "Caio Prince es Mamba Negra de cabo a rabo. Mezcla dancehall con favela bass. La pista derritiéndose."
+        },
+        {
+          "id": "tati-12",
+          "title": "Tombei",
+          "artist": "Karol Conka",
+          "soundcloudUrl": "https://soundcloud.com/karolconkaofficial/tombei",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-vbZ2yxf5saVA-0-t500x500.jpg",
+          "djVerdict": "'Tombei' es lo que hago al entrar a la pista. Karol Conká con corona invisible. Mujeres negras al frente."
+        },
+        {
+          "id": "tati-13",
+          "title": "Badsista | HARD DANCE Berlin",
+          "artist": "Boiler Room",
+          "soundcloudUrl": "https://soundcloud.com/platform/badsista",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000524786703-5lixh3-t500x500.jpg",
+          "djVerdict": "BADSISTA en Berghain. Esta es mi biografía — paulistana confrontando techno alemán con funk de favela. Una hora exacta."
+        },
+        {
+          "id": "tati-14",
+          "title": "DESCE LICOR",
+          "artist": "Tasha & Tracie",
+          "soundcloudUrl": "https://soundcloud.com/tashatracie/desce-licor",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-aGleTXPmaU3K-0-t500x500.jpg",
+          "djVerdict": "Tasha & Tracie son hermanas, paulistanas, modelos, raperas. 'Desce Licor' es para tomarse el quinto chupito sin pena."
+        },
+        {
+          "id": "tati-15",
+          "title": "Cabeça erguida (feat. Cynthia Luz & Lourena)",
+          "artist": "Drik Barbosa",
+          "soundcloudUrl": "https://soundcloud.com/drikbarbosaofficial/cabeca-erguida-feat-cynthia",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-cexABdgTSTDi-0-t500x500.jpg",
+          "djVerdict": "Drik con Cynthia Luz y Lourena. Tres mujeres paulistanas. 'Cabeza erguida' es el manifiesto de no agachar la cabeza ante nadie."
+        },
+        {
+          "id": "tati-16",
+          "title": "Rito de Passá",
+          "artist": "MC Tha",
+          "soundcloudUrl": "https://soundcloud.com/mc-thaah-thais-dayane/sets/rito-de-passa-1",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-3abf21b1-617d-42e2-9cfa-acd1dc9caa6a-0-t500x500.jpg",
+          "djVerdict": "Mc Tha mezcla candomblé con funk. Ceremonia espiritual con kick de techno. Sagrado y sucio."
+        },
+        {
+          "id": "tati-17",
+          "title": "DJ MARFOX - LUCKY PUNCH",
+          "artist": "LIT CITY TRAX",
+          "soundcloudUrl": "https://soundcloud.com/litcity/3-dj-marfox-lucky-punch",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000073231072-sr8b0w-t500x500.jpg",
+          "djVerdict": "Marfox es lisboeta-angoleño, kuduro. Pero la frecuencia es la misma que paulistana — bass que hace temblar el suelo."
+        },
+        {
+          "id": "tati-18",
+          "title": "Joyce Muniz Dj Set @Sisyphos Club Berlin",
+          "artist": "Joyce Muniz",
+          "soundcloudUrl": "https://soundcloud.com/joytoy/joyce-muniz-dj-set-sisyphos-club-berlin-17072016",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-000173572456-vk50nz-t500x500.jpg",
+          "djVerdict": "Joyce es brasileña en Viena. Sisyphos es club de Berlín. Set largo, perfecto para perderme dentro."
+        },
+        {
+          "id": "tati-19",
+          "title": "Tomboy",
+          "artist": "Princess Nokia",
+          "soundcloudUrl": "https://soundcloud.com/princessnokia92/tomboy",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-6MgUAXZKVYgV-0-t500x500.jpg",
+          "djVerdict": "Destiny Frasqueri es del Bronx, latina. 'Tomboy' es cuerpo de chica con energía de chico. La pongo cuando quiero molestar."
+        },
+        {
+          "id": "tati-20",
+          "title": "A7mad - 8zlan - Lbs - Eldab (Tropikal Camel AifoDeb edit)",
+          "artist": "Tropikal Camel",
+          "soundcloudUrl": "https://soundcloud.com/tropikalcamel/a7mad-8zlan-lbs-eldabtropikal-camel-aifodeb-edit",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-tA2SvqUadeaRJ0E6-xNNJVA-t500x500.jpg",
+          "djVerdict": "Tropikal Camel es Tel Aviv, edits árabes con beats de club. Diáspora cruzada — no me importa de dónde es, suena a casa."
+        },
+        {
+          "id": "tati-21",
+          "title": "Por Supuesto",
+          "artist": "Marina Sena",
+          "soundcloudUrl": "https://soundcloud.com/marinasena-music/por-supuesto",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-e0Tgwo8YZBGO-0-t500x500.jpg",
+          "djVerdict": "Marina Sena canta como si lo hiciera para sí misma primero. 'Por Supuesto' tiene melancolía adentro pero baila igual."
+        },
+        {
+          "id": "tati-22",
+          "title": "Zero",
+          "artist": "Liniker",
+          "soundcloudUrl": "https://soundcloud.com/linikerofficial/zero",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-Kiih2sLrgLWW-0-t500x500.jpg",
+          "djVerdict": "Liniker fue la primera mujer trans negra en ganar Grammy Latino. 'Zero' es voz, sin adorno. Punto y aparte."
+        },
+        {
+          "id": "tati-23",
+          "title": "Bixa Preta",
+          "artist": "Linn da Quebrada",
+          "soundcloudUrl": "https://soundcloud.com/linndaquebrada/bixa-preta",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-uAbI0H6awsio-0-t500x500.jpg",
+          "djVerdict": "Linn cantando 'Bixa Preta' es decir el insulto y convertirlo en orgullo. Travesti paulistana cabalgando el funk."
+        },
+        {
+          "id": "tati-24",
+          "title": "Rebola no Pau",
+          "artist": "Mu540",
+          "soundcloudUrl": "https://soundcloud.com/mu540/rebola-no-pau",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-AoL4pz7Er5dO-0-t500x500.jpg",
+          "djVerdict": "Mu540 es el productor de muchos hits que se suben a la lista de Anitta sin créditos. 'Rebola no Pau' es el funk descarado que quería."
+        },
+        {
+          "id": "tati-25",
+          "title": "MACUMBINHA 130BPM - DJ ARANA",
+          "artist": "DJ ARANA OFICIAL",
+          "soundcloudUrl": "https://soundcloud.com/user-577945535/macumbinha-130bpm-dj-arana",
+          "artworkUrl": "https://i1.sndcdn.com/artworks-ggT5uBwc4qWQ7Go8-uAyCGw-t500x500.jpg",
+          "djVerdict": "DJ Arana mete macumba con 130 BPM. Bruxaria, pero más rápida. Para cuando ya pasaron los chupitos y solo quiero sudar."
+        }
+      ]
     }
   }
 }
