@@ -63,7 +63,7 @@
         "referents": ["Nils Frahm", "Ólafur Arnalds", "Kiasmos", "Tycho", "Boards of Canada"]
       },
       "visual": {
-        "illustration": null,
+        "illustration": "assets/animation/guy-dj.webm",
         "colorPalette": ["#d4d8e0", "#5a6a7a", "#e8e0d4"]
       }
     },
@@ -95,7 +95,7 @@
         "referents": ["DJ Lag", "Sherelle", "FJAAK", "Indira Paganotto", "SPFDJ"]
       },
       "visual": {
-        "illustration": null,
+        "illustration": "assets/animation/geisha-dj.webm",
         "colorPalette": ["#1a1a1a", "#e02020", "#3a3a3a"]
       }
     },
@@ -127,7 +127,7 @@
         "referents": ["Nicola Cruz", "Quantic", "Chancha Vía Circuito", "Polo & Pan", "Khruangbin"]
       },
       "visual": {
-        "illustration": null,
+        "illustration": "assets/animation/chicken-dj.webm",
         "colorPalette": ["#e8a848", "#d45a3a", "#f5e6d0"]
       }
     },
