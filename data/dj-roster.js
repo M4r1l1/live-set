@@ -1,0 +1,267 @@
+// DJ Roster — 8 DJs with full profiles (identity, taste, sound, visual).
+// Source of truth for daily rotation.
+// Migrated from data/dj-roster.json on 2026-05-11.
+
+window.DJ_ROSTER = {
+  "version": "1.0",
+  "description": "DJ roster database. Each DJ has a full profile used for daily channel assignment and music curation.",
+  "channels": ["focus", "flow", "move", "intensity"],
+  "roster": [
+    {
+      "id": "dj-mara",
+      "name": "Mara Velour",
+      "channel": "move",
+      "identity": {
+        "age": 29,
+        "city": "Nairobi",
+        "origin": "Franco-senegalesa, criada entre Marsella y Dakar",
+        "background": "Creció entre mercados de Dakar y clubs underground de Marsella. Estudió diseño textil antes de dedicarse a la música."
+      },
+      "personality": {
+        "bio": "Mezcla sonidos orgánicos africanos con la elegancia del deep house europeo. Sus sets son como atardeceres — empiezan cálidos y terminan hipnóticos.",
+        "philosophy": "La música es un textil — capas que se entrelazan hasta que no puedes separar dónde empieza una y termina otra.",
+        "energy": "Cálido, envolvente"
+      },
+      "taste": {
+        "food": "Thiéboudienne, tajines, vino natural, mercados callejeros",
+        "art": "Textiles de Anni Albers, fotografía de Viviane Sassen, cerámica africana contemporánea",
+        "hobbies": "Teñido de telas con pigmentos naturales, yoga al amanecer, coleccionar vinilos en mercados de pulgas",
+        "fandom": "Fatoumata Diawara, Francis Kéré, Yayoi Kusama"
+      },
+      "sound": {
+        "genres": ["Afro House", "Deep House", "Organic House"],
+        "bpmRange": [118, 126],
+        "vibe": "Como estar en una terraza al atardecer en una isla. Percusiones que se van apoderando.",
+        "referents": ["Black Coffee", "Stimming", "Rampa", "Acid Pauli"]
+      },
+      "visual": {
+        "illustration": "assets/animation/stone-dj.webm",
+        "colorPalette": ["#c45e2c", "#2c8c7c", "#1a3a2a"]
+      }
+    },
+    {
+      "id": "dj-kei",
+      "name": "Kei Nomura",
+      "channel": "focus",
+      "identity": {
+        "age": 34,
+        "city": "Berlín",
+        "origin": "Japonés-argentino. Nació en Buenos Aires de padre japonés y madre argentina. Se mudó a Tokio a los 18, luego a Berlín a los 26.",
+        "background": "Estudió arquitectura en Tokio — nunca ejerció. Trabajó 3 años como ingeniero de sonido en un estudio de grabación de Shibuya. Empezó a mezclar en cafés de especialidad en Berlín a las 7am, cuando nadie más quería el turno."
+      },
+      "personality": {
+        "bio": "Construye sets como construiría un edificio: espacio, estructura, silencio. Su música es lo que suena cuando una ciudad todavía no despierta.",
+        "philosophy": "El silencio entre dos tracks es tan importante como los tracks mismos.",
+        "energy": "Contemplativo, espacioso"
+      },
+      "taste": {
+        "food": "Onigiri, mate argentino, café de filtro, pan de masa madre. Cocina lento los domingos.",
+        "art": "Tadao Ando, Ryuichi Sakamoto, las fotografías de Hiroshi Sugimoto, el cine de Wim Wenders",
+        "hobbies": "Grabación de field recordings (trenes, lluvia, mercados), cerámica raku, caminatas largas sin rumbo, armar playlists para cafés",
+        "fandom": "Ryuichi Sakamoto, Jun'ichirō Tanizaki (El elogio de la sombra), Olafur Eliasson, Leandro Erlich"
+      },
+      "sound": {
+        "genres": ["Ambient", "Downtempo", "Electronica"],
+        "bpmRange": [85, 110],
+        "vibe": "Las 6am en un departamento con ventanales grandes. Lluvia afuera. Café recién hecho. No hay prisa por nada.",
+        "referents": ["Nils Frahm", "Ólafur Arnalds", "Kiasmos", "Tycho", "Boards of Canada"]
+      },
+      "visual": {
+        "illustration": "assets/animation/guy-dj.webm",
+        "colorPalette": ["#d4d8e0", "#5a6a7a", "#e8e0d4"]
+      }
+    },
+    {
+      "id": "dj-zola",
+      "name": "Zola Mbeki",
+      "channel": "intensity",
+      "identity": {
+        "age": 26,
+        "city": "Londres",
+        "origin": "Sudafricana, creció en Johannesburgo. Se mudó a Londres a los 21 con una maleta y un USB con 200 tracks.",
+        "background": "Creció escuchando gqom y amapiano en los taxis de Joburg. Su tía tenía un puesto de ropa en un mercado donde sonaba kwaito todo el día. Estudió ingeniería eléctrica un año — lo dejó para trabajar en una tienda de discos en Brixton. Su primer gig fue un set de 5 horas en un sótano de Peckham porque el DJ que iba no llegó."
+      },
+      "personality": {
+        "bio": "Mezcla la crudeza del club sudafricano con la oscuridad del techno británico. Sus sets no te invitan a bailar — te obligan.",
+        "philosophy": "No me interesa que la gente piense mientras baila. Me interesa que sienta el piso vibrar y se olvide de su nombre.",
+        "energy": "Visceral, hipnótica"
+      },
+      "taste": {
+        "food": "Bunny chow, peri-peri chicken, ginger beer casera, junk food a las 4am después de un gig",
+        "art": "William Kentridge, Zanele Muholi, graffiti de Banksy, películas de Nicolas Winding Refn",
+        "hobbies": "Boxeo, customizar ropa vintage con parches, explorar sótanos y warehouses abandonados, fotografía nocturna con el celular",
+        "fandom": "DJ Lag, Sherelle, Virgil Abloh, Michaela Coel"
+      },
+      "sound": {
+        "genres": ["Techno", "Breakbeat", "Gqom"],
+        "bpmRange": [130, 145],
+        "vibe": "Un sótano en Peckham a las 2am. Luces estroboscópicas. No ves las caras, solo sientes los cuerpos moviéndose. El bass te golpea el pecho.",
+        "referents": ["DJ Lag", "Sherelle", "FJAAK", "Indira Paganotto", "SPFDJ"]
+      },
+      "visual": {
+        "illustration": "assets/animation/geisha-dj.webm",
+        "colorPalette": ["#1a1a1a", "#e02020", "#3a3a3a"]
+      }
+    },
+    {
+      "id": "dj-paloma",
+      "name": "Paloma del Río",
+      "channel": "flow",
+      "identity": {
+        "age": 31,
+        "city": "Lisboa",
+        "origin": "Colombo-portuguesa. Nació en Cartagena, creció entre Santo Domingo y Barranquilla. Se fue a Lisboa a los 23 persiguiendo la escena de música tropical electrónica.",
+        "background": "Su abuela ponía boleros y salsa en un tocadiscos mientras cocinaba. Estudió gastronomía pero terminó trabajando en bares de música en Lisboa — primero cocinando, después seleccionando la música del local. Nunca se consideró DJ hasta que el dueño del bar le dijo 'tú ya lo eres'."
+      },
+      "personality": {
+        "bio": "No mezcla tracks, mezcla memorias. Un bolero se convierte en un groove, una cumbia se vuelve algo que suena a playa europea. Todo fluye como una conversación larga entre amigos.",
+        "philosophy": "La mejor música de fondo es la que de repente te das cuenta que llevas 20 minutos sonriendo sin saber por qué.",
+        "energy": "Cálido, groovy, despreocupado"
+      },
+      "taste": {
+        "food": "Pastéis de nata, ceviche, café con panela, ron con limón, arroz de coco. Cocina para sus amigos cada viernes.",
+        "art": "Botero, los colores de Pedro Almodóvar, los afiches de Tropicália brasileña, la cerámica portuguesa de azulejos",
+        "hobbies": "Cocinar sin receta, mercados de pulgas en Lisboa, nadar en el mar todo el año, coleccionar postales viejas de ciudades del Caribe",
+        "fandom": "Nicola Cruz, Quantic, Lucrecia Dalt, Gabriel García Márquez, Wes Anderson"
+      },
+      "sound": {
+        "genres": ["Nu-Disco", "Tropical Bass", "Indie Dance"],
+        "bpmRange": [108, 120],
+        "vibe": "Un bar en Lisboa con las ventanas abiertas al río. Son las 6 de la tarde, hay brisa, la luz es dorada. No quieres irte nunca.",
+        "referents": ["Nicola Cruz", "Quantic", "Chancha Vía Circuito", "Polo & Pan", "Khruangbin"]
+      },
+      "visual": {
+        "illustration": "assets/animation/chicken-dj.webm",
+        "colorPalette": ["#e8a848", "#d45a3a", "#f5e6d0"]
+      }
+    },
+    {
+      "id": "dj-aida",
+      "name": "Aida Mengistu",
+      "channel": "focus",
+      "identity": {
+        "age": 38,
+        "city": "Londres",
+        "origin": "Etíope-británica. Nació en Addis Abeba, su familia se mudó a Londres cuando ella tenía 7 años.",
+        "background": "Su padre fue saxofonista en la escena ethio-jazz de Addis en los 70s, y trajo sus discos a Londres en cajas de cartón. Estudió piano clásico en el Royal College of Music, pero terminó tocando en un bar de jazz de Stoke Newington para pagar la renta. Hoy programa noches en Total Refreshment Centre."
+      },
+      "personality": {
+        "bio": "Mezcla la melancolía cálida del ethio-jazz de su padre con la nueva escena de jazz negro británico. Sus sets suenan a sala de estar a medianoche, con velas y una conversación que se vuelve confesión.",
+        "philosophy": "El jazz no se baila — se escucha. Pero si el set está bien armado, el cuerpo se mueve solo sin que te des cuenta.",
+        "energy": "Cálido, nocturno, contemplativo"
+      },
+      "taste": {
+        "food": "Injera con doro wat, café etíope ceremonial, vino tinto natural, pan recién horneado. Cocina los sábados con jazz de fondo.",
+        "art": "Fotografía de Gordon Parks, los textiles etíopes de Aida Muluneh, la poesía de Warsan Shire, las películas de Barry Jenkins",
+        "hobbies": "Coleccionar vinilos de jazz africano, escribir cartas a mano, tocar piano sola en su sala, caminar por Hampstead Heath al amanecer",
+        "fandom": "Mulatu Astatke, Alice Coltrane, Yussef Dayes, Hiatus Kaiyote, Nina Simone, James Baldwin"
+      },
+      "sound": {
+        "genres": ["Nu-Jazz", "Spiritual Jazz", "Ethio-Jazz"],
+        "bpmRange": [70, 100],
+        "vibe": "Un bar pequeño en Londres a medianoche. Lluvia constante afuera. Velas en cada mesa. Alguien acaba de pedir un old-fashioned. La conversación se ralentiza y todo el mundo está escuchando sin escuchar.",
+        "referents": ["Mulatu Astatke", "Yussef Dayes", "Sons of Kemet", "Floating Points", "Hiatus Kaiyote"]
+      },
+      "visual": {
+        "illustration": "assets/animation/general-dj.webm",
+        "colorPalette": ["#3a2418", "#c9974d", "#1a1410"]
+      }
+    },
+    {
+      "id": "dj-naina",
+      "name": "Naina Iyer",
+      "channel": "flow",
+      "identity": {
+        "age": 27,
+        "city": "Mumbai",
+        "origin": "India, familia tamil del sur. Nació en Bangalore, se mudó a Mumbai para estudiar y nunca se fue.",
+        "background": "Su madre coleccionaba cassettes de Asha Bhosle y Bappi Lahiri en los 80s — la era de oro del Bollywood-disco. Estudió diseño de sonido en FTII Pune, trabajó haciendo música para cine indie indio. Empezó a hacer DJ sets en azoteas de Bombay para sus amigos del cine, hasta que la invitaron al festival Magnetic Fields en Rajasthan."
+      },
+      "personality": {
+        "bio": "Reescribe el Bollywood-disco para una India contemporánea — entre la nostalgia del cassette de su mamá y el club de Bombay actual. Sus sets son coloridos, percutivos, y siempre tienen una nota dulce.",
+        "philosophy": "India no es una sola cosa. Mi set tampoco. Quiero que en una hora pases de un templo a un rooftop a una cocina llena de gente.",
+        "energy": "Cálido, percutivo, eufórico contenido"
+      },
+      "taste": {
+        "food": "Dosa con sambar, chai con cardamomo, mango lassi, comida callejera de Mumbai a las 11pm, naranja con sal",
+        "art": "Las películas de Wong Kar-wai, los carteles del cine bollywood antiguo, los textiles de Madhya Pradesh, fotografía de Raghubir Singh",
+        "hobbies": "Yoga ashtanga, mercado de pulgas en Chor Bazaar buscando vinilos, cocinar para 10 personas con poca anticipación, documentales sobre cine indio",
+        "fandom": "Asha Bhosle, Lifafa, Sandunes, Mira Nair, A.R. Rahman, Arundhati Roy"
+      },
+      "sound": {
+        "genres": ["Indian Electronic", "Bollywood Disco", "Bhangra House"],
+        "bpmRange": [110, 122],
+        "vibe": "Una azotea en Bombay al atardecer monzónico. Aroma a especias del puesto de la esquina. Saris colgando de las terrazas vecinas. La ciudad abajo, percusión arriba.",
+        "referents": ["Lifafa", "Sandunes", "Anish Sood", "Ritviz", "Nicola Cruz"]
+      },
+      "visual": {
+        "illustration": "assets/animation/general-dj.webm",
+        "colorPalette": ["#e85a4f", "#f4b942", "#5a2e8c"]
+      }
+    },
+    {
+      "id": "dj-mariana",
+      "name": "Mariana Lozano",
+      "channel": "move",
+      "identity": {
+        "age": 30,
+        "city": "Ciudad de México",
+        "origin": "Mexicana, nació en Tijuana. Se mudó a CDMX a los 22 para trabajar en radio independiente.",
+        "background": "Su papá tiene una tienda de discos en la Avenida Revolución de Tijuana — creció ordenando vinilos de Café Tacvba, Caifanes y Plastilina Mosh. Su hermano mayor le pasó toda la nueva escena indie latina: Bomba Estéreo, Buscabulla, Helado Negro. Estudió comunicación, hizo radio universitaria, y ahora programa una noche fija en un club de la Roma Norte."
+      },
+      "personality": {
+        "bio": "Reúne el rock alternativo en español de los 90s con la cumbia electrónica y el indie latino actual. Sus sets son una azotea en CDMX llena de gente bailando con cervezas en la mano.",
+        "philosophy": "El indie latino no es nicho — es la música del barrio si el barrio tiene buen WiFi y peor sistema de sonido.",
+        "energy": "Energético, ecléctico, sudoroso"
+      },
+      "taste": {
+        "food": "Tacos al pastor a las 2am, mezcal con naranja, café de olla, tlayudas, mercado de Medellín en domingo",
+        "art": "Murales de Diego Rivera, fotografía de Graciela Iturbide, películas de Alfonso Cuarón, posters de la Onda Chicana, cine mexicano de los 70s",
+        "hobbies": "Coleccionar vinilos en Tianguis Cultural del Chopo, cocinar tortas para sus amigos, andar en bici por el Centro, tatuarse cosas pequeñas",
+        "fandom": "Café Tacvba, Bomba Estéreo, Lido Pimienta, Natalia Lafourcade, Guillermo del Toro"
+      },
+      "sound": {
+        "genres": ["Indie Latino", "Alt-Cumbia", "Latin Electronic"],
+        "bpmRange": [115, 128],
+        "vibe": "Una azotea en Roma Norte CDMX. Atardecer rosado. Cerveza en la mano. Murales en las paredes. La cumbia se mezcla con guitarras eléctricas y todos bailan sin tomarse en serio.",
+        "referents": ["Bomba Estéreo", "Sotomayor", "Buscabulla", "Lido Pimienta", "Helado Negro"]
+      },
+      "visual": {
+        "illustration": "assets/animation/general-dj.webm",
+        "colorPalette": ["#e8478c", "#f4a04f", "#2c5fb8"]
+      }
+    },
+    {
+      "id": "dj-tati",
+      "name": "Tati Almeida",
+      "channel": "intensity",
+      "identity": {
+        "age": 24,
+        "city": "São Paulo",
+        "origin": "Brasileña, criada en Capão Redondo (zona sur de São Paulo).",
+        "background": "Creció con baile funk en radios piratas y batidões saliendo de los carros del barrio. Aprendió a hacer beats de funk en FL Studio a los 14, con tutoriales de YouTube. Empezó a tocar en fiestas LGBTQ+ underground en SP. A los 22, BADSISTA la llevó a tocar en Berghain. Hoy se mueve constantemente entre São Paulo, Lisboa y Berlín."
+      },
+      "personality": {
+        "bio": "Cuelga el baile funk de la favela paulistana del techno duro berlinés. Sus sets son un atajo del Capão a Berghain — sin pausa, sin permiso, sin pedir disculpas.",
+        "philosophy": "El funk de la favela no es exótico, es el techno más físico del planeta. Solo que con MC en portugués y no en alemán.",
+        "energy": "Visceral, abrasiva, eufórica"
+      },
+      "taste": {
+        "food": "Pão na chapa con café, hamburguesa de la esquina, açaí denso, cerveza helada, comida de bar entre sets",
+        "art": "Fotografía de Tuca Vieira (favelas + rascacielos), grafiti de Os Gêmeos, las películas de Cidade de Deus, los videos de Anitta, la moda funkeira",
+        "hobbies": "Customizar tenis con marcador, salir a correr de madrugada por la 23 de Maio, producir beats funk en el bus, pelo neon",
+        "fandom": "BADSISTA, Cashu, Anitta, MC Carol, Karol Conká, DJ Marfox"
+      },
+      "sound": {
+        "genres": ["Baile Funk", "Brazilian Techno", "Favela Bass"],
+        "bpmRange": [130, 150],
+        "vibe": "Madrugada en una rave clandestina en la periferia paulistana. Muros de concreto, luces de emergencia. La sirena de un MC mezclada con un kick alemán. El piso vibra y nadie sale hasta que sale el sol.",
+        "referents": ["BADSISTA", "Cashu", "Teto Preto", "Maximus", "LYZZA"]
+      },
+      "visual": {
+        "illustration": "assets/animation/general-dj.webm",
+        "colorPalette": ["#ff2e63", "#08f7fe", "#0a0a0a"]
+      }
+    }
+  ]
+};
