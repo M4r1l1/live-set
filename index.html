@@ -259,15 +259,26 @@
       return basePath.replace(/\.webm$/, useHEVC ? '.mov' : '.webm');
     }
     console.log('[anim] format:', useHEVC ? '.mov (HEVC)' : '.webm (VP9)');
-
-    // Preload all DJ animations during splash so they're cached when needed
-    ['stone-dj', 'guy-dj', 'geisha-dj', 'chicken-dj', 'general-dj'].forEach(function (name) {
-      var v = document.createElement('video');
-      v.preload = 'auto';
-      v.muted = true;
-      v.src = animSrc('assets/animation/' + name + '.webm');
-      v.load();
-    });
+  </script>
+  <script src="data/dj-roster.js"></script>
+  <script src="data/dj-playlists.js"></script>
+  <script>
+    // Preload all unique DJ animations from the roster + the general fallback.
+    (function preloadAnimations() {
+      var paths = new Set();
+      (window.DJ_ROSTER.roster || []).forEach(function (dj) {
+        var p = (dj.visual && dj.visual.illustration) || dj.illustration;
+        if (p) paths.add(p);
+      });
+      paths.add('assets/animation/general-dj.webm');
+      paths.forEach(function (path) {
+        var v = document.createElement('video');
+        v.preload = 'auto';
+        v.muted = true;
+        v.src = animSrc(path);
+        v.load();
+      });
+    })();
   </script>
   <script src="js/data.js"></script>
   <script src="js/player.js"></script>
