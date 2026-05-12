@@ -5,16 +5,26 @@
 // ============================================
 
 // ---- Rotation ----
+// Daily DJ rotation: seed a PRNG from the UTC date and draw one DJ per channel.
+// djb2(date) → mulberry32 stream → 4 independent picks. This gives uniform
+// distribution over the 2^4 = 16 possible day-tuples and ensures adjacent
+// dates produce different rotations (a simpler LCG seed had a 12-day "stickiness").
 
-function _dateToSeed(dateStr) {
-  // "2026-05-11" -> 20260511
-  return parseInt(dateStr.replace(/-/g, ''), 10);
+function _djb2(s) {
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+  return h >>> 0;
 }
 
-function _seededIndex(seed, n) {
-  // Linear congruential generator. Good enough for n in 2..few-dozen candidates.
-  const x = (seed * 9301 + 49297) % 233280;
-  return Math.floor((x / 233280) * n);
+function _mulberry32(seed) {
+  let s = seed | 0;
+  return function () {
+    s = (s + 0x6D2B79F5) | 0;
+    let t = s;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
 }
 
 function _groupByChannel(roster) {
@@ -26,18 +36,18 @@ function _groupByChannel(roster) {
 }
 
 function pickDailyDJs(roster, dateStr) {
-  const seed = _dateToSeed(dateStr);
+  const rng = _mulberry32(_djb2(dateStr));
   const byChannel = _groupByChannel(roster);
   const channels = ['focus', 'flow', 'move', 'intensity'];
 
-  return channels.map((channel, i) => {
+  return channels.map((channel) => {
     const candidates = byChannel[channel];
     if (!candidates || candidates.length === 0) {
       console.warn('[rotation] no DJs for channel', channel);
+      rng(); // advance regardless so later channels keep their stream position
       return null;
     }
-    const idx = _seededIndex(seed + i, candidates.length);
-    return candidates[idx];
+    return candidates[Math.floor(rng() * candidates.length)];
   });
 }
 
